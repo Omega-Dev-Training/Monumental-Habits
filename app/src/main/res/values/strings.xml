@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Monumental Habits</string>
+
+    <string name="zaglav">Profile</string>
 </resources>
