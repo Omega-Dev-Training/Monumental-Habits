@@ -51,6 +51,7 @@
         android:id="@+id/scrollview_vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:fillViewport="true"
         android:background="#0000"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
@@ -64,6 +65,7 @@
             android:layout_marginTop="15dp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@color/white"
@@ -121,7 +123,7 @@
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/motivation">
+                app:layout_constraintTop_toBottomOf="@+id/cardview">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraint_info"
@@ -174,6 +176,41 @@
                         app:layout_constraintTop_toTopOf="@+id/day_box_1"
                         app:layout_constraintBottom_toTopOf="@+id/number1"/>
 
+                    <ImageView
+                        android:id="@+id/day_box_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="6dp"
+                        app:layout_constraintStart_toEndOf="@+id/day_box_1"
+                        app:layout_constraintTop_toTopOf="@+id/constraint_info"
+                        android:contentDescription="@string/day_box_1"/>
+
+                    <TextView
+                        android:id="@+id/number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_18"
+                        style="@style/NumberHabitsStyle"
+                        android:layout_marginBottom="5dp"
+                        app:layout_constraintStart_toStartOf="@+id/day_box_2"
+                        app:layout_constraintEnd_toEndOf="@+id/day_box_2"
+                        app:layout_constraintTop_toBottomOf="@+id/monday1"
+                        app:layout_constraintBottom_toBottomOf="@+id/day_box_2"/>
+
+                    <TextView
+                        android:id="@+id/monday1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mon"
+                        style="@style/DayOfWeekStyle"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="@+id/number2"
+                        app:layout_constraintEnd_toEndOf="@+id/number2"
+                        app:layout_constraintTop_toTopOf="@+id/day_box_2"
+                        app:layout_constraintBottom_toTopOf="@+id/number2"/>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </HorizontalScrollView>
@@ -183,11 +220,6 @@
 
 
     </ScrollView>
-
-
-
-
-
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

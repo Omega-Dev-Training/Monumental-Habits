@@ -16,4 +16,6 @@
     <string name="bk_tracking">bk_tracking</string>
     <string name="button_plus">button_plus</string>
     <string name="sun">SUN</string>
+    <string name="_18">18</string>
+    <string name="mon">MON</string>
 </resources>
