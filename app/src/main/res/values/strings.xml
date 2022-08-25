@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Monumental Habits</string>
+
+    <string name="zaglav">Profile</string>
+    <string name="name">Marilyn Aminoff</string>
+    <string name="date">This week</string>
+    <string name="podzaglav">Total Work Hours</string>
+    <string name="status_task">Task Completed</string>
+    <string name="layout2">Billing methods</string>
+    <string name="layout3">Longest Streak</string>
+    <string name="streak">20 Days</string>
 </resources>

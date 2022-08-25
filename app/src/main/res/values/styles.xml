@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="background">#FFF3E9</color>
+    <color name="eggplant">#573353</color>
+
+    <style name="icon1">
+        <item name="android:icon">@drawable/ic_chtoto</item>
+        <item name="background">@drawable/iconki</item>
+    </style>
+
+    <style name="medium">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/eggplant</item>
+    </style>
+
+    <style name="bold">
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/eggplant</item>
+    </style>
+
+    <style name="name">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="num">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/eggplant</item>
+    </style>
+
+    <style name="zaglav">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="Theme.MonumentalHabits">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="displayOptions">showTitle|homeAsUp</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="navigationIcon">@drawable/ic_back</item>
+    </style>
+</resources>
