@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF3E9">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="25dp"
+        android:background="@android:color/transparent"
+        app:navigationIcon="@drawable/ic_top_nav">
+
+        <TextView
+            style="@style/Text.Bold2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read A Book"
+            android:textSize="18dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="27dp"
+            android:src="@drawable/ic_edit"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_white">
+
+        <ImageView
+            android:id="@+id/image_habit"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="20dp"
+            android:foreground="@drawable/bg_icon"
+            android:src="@drawable/teepee_swirly"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_habit"
+            style="@style/Text.Bold2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:text="Read a Book"
+            android:paddingVertical="5dp"
+            app:layout_constraintStart_toEndOf="@id/image_habit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/icon_notification"
+            />
+
+        <ImageView
+            android:id="@+id/icon_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintStart_toStartOf="@id/title_habit"
+            app:layout_constraintTop_toBottomOf="@id/title_habit"
+            app:layout_constraintEnd_toStartOf="@id/title_notification"
+            app:layout_constraintBottom_toTopOf="@id/icon_repeat"/>
+
+        <TextView
+            android:id="@+id/title_notification"
+            style="@style/Text.Light50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:text="Repeat everyday"
+            app:layout_constraintStart_toEndOf="@id/icon_notification"
+            app:layout_constraintTop_toTopOf="@id/icon_notification"
+            app:layout_constraintBottom_toBottomOf="@id/icon_notification"/>
+
+        <ImageView
+            android:id="@+id/icon_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_repeat"
+            app:layout_constraintStart_toStartOf="@id/icon_notification"
+            app:layout_constraintTop_toBottomOf="@id/icon_notification"
+            app:layout_constraintEnd_toStartOf="@id/title_repeat"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_repeat"
+            style="@style/Text.Light50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:text="Reminders: 5:00 am"
+            app:layout_constraintStart_toEndOf="@id/icon_repeat"
+            app:layout_constraintTop_toTopOf="@id/icon_repeat"
+            app:layout_constraintBottom_toBottomOf="@id/icon_repeat"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_white">
+
+        <ImageView
+            android:id="@+id/icon_arrow_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            style="@style/Text.Bold2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="5dp"
+            android:text="January"
+            app:layout_constraintStart_toEndOf="@+id/icon_arrow_left"
+            app:layout_constraintEnd_toStartOf="@id/icon_arrow_right"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_arrow_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/month_1"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/day_1"
+            app:layout_constraintEnd_toEndOf="@id/day_1"
+            android:text="SUN"
+            app:layout_constraintTop_toBottomOf="@+id/icon_arrow_left"/>
+
+        <TextView
+            android:id="@+id/month_2"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MON"
+            app:layout_constraintTop_toTopOf="@id/month_1"
+            app:layout_constraintBottom_toBottomOf="@id/month_1"
+            app:layout_constraintEnd_toEndOf="@id/day_2"
+            app:layout_constraintStart_toStartOf="@id/day_2" />
+
+        <TextView
+            android:id="@+id/month_3"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUE"
+            app:layout_constraintTop_toTopOf="@id/month_2"
+            app:layout_constraintBottom_toBottomOf="@id/month_2"
+            app:layout_constraintEnd_toEndOf="@id/day_3"
+            app:layout_constraintStart_toStartOf="@id/day_3"  />
+
+        <TextView
+            android:id="@+id/month_4"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WED"
+            app:layout_constraintTop_toTopOf="@id/month_3"
+            app:layout_constraintBottom_toBottomOf="@id/month_3"
+            app:layout_constraintEnd_toEndOf="@id/day_4"
+            app:layout_constraintStart_toStartOf="@id/day_4" />
+
+        <TextView
+            android:id="@+id/month_5"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THU"
+            app:layout_constraintTop_toTopOf="@id/month_4"
+            app:layout_constraintBottom_toBottomOf="@id/month_4"
+            app:layout_constraintEnd_toEndOf="@id/day_5"
+            app:layout_constraintStart_toStartOf="@id/day_5"/>
+
+        <TextView
+            android:id="@+id/month_6"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRI"
+            app:layout_constraintTop_toTopOf="@id/month_5"
+            app:layout_constraintBottom_toBottomOf="@id/month_5"
+            app:layout_constraintEnd_toEndOf="@id/day_6"
+            app:layout_constraintStart_toStartOf="@id/day_6" />
+
+        <TextView
+            android:id="@+id/month_7"
+            style="@style/Text.Medium.50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAT"
+            app:layout_constraintTop_toTopOf="@id/month_6"
+            app:layout_constraintBottom_toBottomOf="@id/month_6"
+            app:layout_constraintEnd_toEndOf="@id/day_7"
+            app:layout_constraintStart_toStartOf="@id/day_7" />
+
+        <LinearLayout
+            android:id="@+id/day_1"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/month_1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="1"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_2"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_1"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="2"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_3"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_2"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="3"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_4"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_3"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="4"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_5"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_4"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="5"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_6"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_5"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="6"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_7"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_6"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="7"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_8"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/day_1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="8"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_9"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_8"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="9"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_10"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_9"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="10"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_11"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_10"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="11"
+                style="@style/Text.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_12"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_11"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_11">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="12"
+                style="@style/Text.Medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_full"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_13"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_12"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="13"
+                style="@style/Text.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_14"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_13"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_13">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="14"
+                style="@style/Text.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_15"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/day_8"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="15"
+                style="@style/Text.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_16"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_15"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="16"
+                style="@style/Text.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_17"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_16"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_16">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="17" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_18"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_17"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_17">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="18" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_19"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_18"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_18">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="19" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_20"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_19"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_19">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="20" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_item_half"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_21"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_20"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_20">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="21" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_22"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/day_15"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="22" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_23"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_22"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_22">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="23" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_24"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_23"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_23">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_25"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_24"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_24">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="25" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_26"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_25"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_25">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="26" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_27"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_26"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_26">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="27" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_28"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_27"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_27">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="28" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_29"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/day_22"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="29" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_30"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_29"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_29"
+            app:layout_constraintBottom_toBottomOf="@id/day_29">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_31"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_30"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_30"
+            app:layout_constraintBottom_toBottomOf="@id/day_30">
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="31" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_32"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item_light"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_31"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_31"
+            app:layout_constraintBottom_toBottomOf="@id/day_31">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="1"
+                style="@style/Text.Medium.30"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_33"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item_light"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_32"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_32"
+            app:layout_constraintBottom_toBottomOf="@id/day_32">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="2"
+                style="@style/Text.Medium.30"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_34"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item_light"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_33"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_33"
+            app:layout_constraintBottom_toBottomOf="@id/day_33">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="3"
+                style="@style/Text.Medium.30"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_35"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_calendar_item_light"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/day_34"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/day_34"
+            app:layout_constraintBottom_toBottomOf="@id/day_34">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="4"
+                style="@style/Text.Medium.30"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_calendar_item_light" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bottom_calendar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text.Light50"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="22dp"
+        android:text="Analytics"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_white">
+
+        <TextView
+            android:id="@+id/longest_streak_value"
+            style="@style/Text.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="19dp"
+            android:text="20 Days"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            style="@style/Text.Light50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Longest Streak"
+            app:layout_constraintStart_toStartOf="@id/longest_streak_value"
+            app:layout_constraintTop_toBottomOf="@id/longest_streak_value"
+            app:layout_constraintBottom_toTopOf="@id/horizontal_borders"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_longest_streak"
+            app:layout_constraintEnd_toStartOf="@id/vertical_borders"
+            app:layout_constraintBottom_toTopOf="@id/horizontal_borders"/>
+
+        <TextView
+            android:id="@+id/current_streak_value"
+            style="@style/Text.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="19dp"
+            android:text="0 Days"
+            app:layout_constraintStart_toEndOf="@id/vertical_borders"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            style="@style/Text.Light50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Current Streak"
+            app:layout_constraintStart_toEndOf="@id/vertical_borders"
+            app:layout_constraintTop_toBottomOf="@id/current_streak_value"
+            app:layout_constraintStart_toStartOf="@id/current_streak_value"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_current_streak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/horizontal_borders"/>
+
+        <TextView
+            android:id="@+id/completion_rate_value"
+            style="@style/Text.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="19dp"
+            android:text="98 %"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_borders"/>
+
+        <TextView
+            style="@style/Text.Light50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Completion Rate"
+            app:layout_constraintStart_toStartOf="@id/completion_rate_value"
+            app:layout_constraintTop_toBottomOf="@id/completion_rate_value"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_completion_rate"
+            app:layout_constraintEnd_toStartOf="@id/vertical_borders"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/average_easiness_score_value"
+            style="@style/Text.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="19dp"
+            android:text="7"
+            app:layout_constraintStart_toEndOf="@id/vertical_borders"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_borders"/>
+
+        <TextView
+            style="@style/Text.Light50"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Average Easiness Score"
+            app:layout_constraintStart_toStartOf="@+id/average_easiness_score_value"
+            app:layout_constraintTop_toBottomOf="@id/average_easiness_score_value"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_ave_eas_score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:id="@+id/horizontal_borders"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#FFF3E9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:id="@+id/vertical_borders"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#FFF3E9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button.Orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Mark Habit as Complete" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+
+        android:text="Mark Habit as Missed" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bottom_navigation">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="21dp"
+                android:layout_marginStart="23dp"
+                android:src="@drawable/ic_camp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="107dp"
+                android:src="@drawable/ic_courses"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="17dp"
+                android:layout_marginEnd="103dp"
+                android:src="@drawable/ic_community"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="22dp"
+                android:src="@drawable/ic_settings"/>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bottom_nav_button"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
