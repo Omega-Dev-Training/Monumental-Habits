@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Monumental Habits</string>
+    <string name="avatar">avatar</string>
+    <string name="homepage">Homepage</string>
+    <string name="motivation_phrase">We first make our habits, and then our habits makes us.</string>
+    <string name="author">- anonymous</string>
+    <string name="image_motivation">image_motivation</string>
+    <string name="rectangle_motivation">rectangle_motivation</string>
+    <string name="tent">tent</string>
+    <string name="courses">courses</string>
+    <string name="community">community</string>
+    <string name="settings">settings</string>
+    <string name="habits">HABITS</string>
+    <string name="_17">17</string>
+    <string name="day_box_1">day_box_1</string>
+    <string name="bk_tracking">bk_tracking</string>
+    <string name="button_plus">button_plus</string>
+    <string name="sun">SUN</string>
 </resources>
