@@ -11,4 +11,12 @@
     <color name="purpuric">#573353</color>
     <color name="purpuric_50">#80573353</color>
     <color name="orange_20">#32FC9D45</color>
+    <color name="purple_heather">#973456</color>
+    <color name="purple_heather_10">#16973456</color>
+    <color name="yellow">#FC9D45</color>
+    <color name="yellow_10">#16FC9D45</color>
+    <color name="red">#F65B4E</color>
+    <color name="red_10">#16F65B4E</color>
+    <color name="blue">#29319F</color>
+    <color name="blue_10">#1629319F</color>
 </resources>
