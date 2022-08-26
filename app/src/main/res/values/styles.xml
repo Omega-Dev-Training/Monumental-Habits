@@ -3,11 +3,6 @@
 <color name="background">#FFF3E9</color>
     <color name="eggplant">#573353</color>
 
-    <style name="icon1">
-        <item name="android:icon">@drawable/ic_chtoto</item>
-        <item name="background">@drawable/iconki</item>
-    </style>
-
     <style name="medium">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">16sp</item>
@@ -33,7 +28,7 @@
     </style>
 
     <style name="zaglav">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/eggplant</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
@@ -52,5 +47,18 @@
     <style name="ToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
         <item name="actionBarStyle">@style/MyActionBarStyle</item>
         <item name="navigationIcon">@drawable/ic_back</item>
+    </style>
+
+    <style name="date">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="spinner">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/eggplant</item>
     </style>
 </resources>
