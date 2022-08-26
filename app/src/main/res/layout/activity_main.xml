@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitEnd"
-                    app:srcCompat="@drawable/mask_group" />
+                    app:srcCompat="@drawable/teepee_swirly" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -136,7 +136,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        app:srcCompat="@drawable/vector_144"/>
+                        app:srcCompat="@drawable/vector_119"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -181,7 +181,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        app:srcCompat="@drawable/vector_144"/>
+                        app:srcCompat="@drawable/vector_119"/>
 
 
                     <LinearLayout
@@ -227,7 +227,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        app:srcCompat="@drawable/vector_144"/>
+                        app:srcCompat="@drawable/vector_119"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
