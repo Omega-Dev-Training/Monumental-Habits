@@ -33,22 +33,6 @@
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
-    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="Theme.MonumentalHabits">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">24sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="MyActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="displayOptions">showTitle|homeAsUp</item>
-        <item name="titleTextColor">@color/white</item>
-    </style>
-
-    <style name="ToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
-        <item name="actionBarStyle">@style/MyActionBarStyle</item>
-        <item name="navigationIcon">@drawable/ic_back</item>
-    </style>
-
     <style name="date">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">10sp</item>
@@ -60,5 +44,17 @@
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/eggplant</item>
+    </style>
+
+    <style name="numred">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#F65B4E</item>
+    </style>
+
+    <style name="numyell">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FDA758</item>
     </style>
 </resources>

@@ -5,11 +5,17 @@
       <map>
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/back.xml" value="0.295" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bg_bottom_navigation.xml" value="0.2615" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_change.xml" value="0.2615" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_community.xml" value="0.2985" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_next.xml" value="0.2985" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_one.xml" value="0.2985" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_oner.xml" value="0.2985" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_twor.xml" value="0.2985" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/iconki.xml" value="0.295" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/navigationbar.xml" value="0.2985" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/activity_profile.xml" value="0.18" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/menu/redactirovanie.xml" value="0.275" />
       </map>
     </option>
   </component>
