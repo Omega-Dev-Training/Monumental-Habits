@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Monumental-Habits1/app/src/main/res/font/manrope_bold.xml" value="0.396875" />
+        <entry key="..\:/Monumental-Habits1/app/src/main/res/layout/layout_analytics.xml" value="0.25" />
+        <entry key="..\:/Monumental-Habits1/app/src/main/res/layout/layout_settings.xml" value="0.33" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/back.xml" value="0.295" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/iconki.xml" value="0.295" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/activity_main.xml" value="0.22" />
