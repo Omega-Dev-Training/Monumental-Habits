@@ -70,4 +70,9 @@
     <string name="layout2">Billing methods</string>
     <string name="layout3">Longest Streak</string>
     <string name="streak">20 Days</string>
+    <string name="girl">girl</string>
+    <string name="check_your_profile">Check Your Profile</string>
+    <string name="mail">jonathansmith@gmail.com</string>
+    <string name="view">View</string>
+    <string name="general">General</string>
 </resources>
