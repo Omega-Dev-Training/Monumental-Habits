@@ -9,22 +9,11 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
+        style="@style/MaterialToolbarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:paddingVertical="25dp"
-        app:navigationIcon="@drawable/ic_top_nav"
         app:title="Read A Book"
-        app:titleCentered="true"
-        app:titleTextAppearance="@style/Text.Bold2"
-        app:titleTextColor="@color/plum">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|end"
-            android:layout_marginEnd="27dp"
-            android:src="@drawable/ic_edit" />
+        app:menu="@menu/edit_menu">
 
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -1442,51 +1431,6 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/bg_bottom_navigation">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="21dp"
-            android:layout_marginStart="23dp"
-            android:src="@drawable/ic_camp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="18dp"
-            android:layout_marginStart="107dp"
-            android:src="@drawable/ic_courses"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            android:layout_marginBottom="17dp"
-            android:layout_marginEnd="103dp"
-            android:src="@drawable/ic_community"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            android:layout_marginBottom="15dp"
-            android:layout_marginEnd="22dp"
-            android:src="@drawable/ic_settings"/>
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/bottom_nav_button"/>
+    <include layout="@layout/navigation_layout" />
 
 </RelativeLayout>
