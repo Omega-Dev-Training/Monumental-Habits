@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
 
-    <size android:height="64dp"
-        android:width="64dp"/>
-    <solid android:color="@color/orange_20"/>
+    <size android:height="60dp"
+        android:width="60dp"/>
+    <solid android:color="#16FC9D45"/>
 
 </shape>
