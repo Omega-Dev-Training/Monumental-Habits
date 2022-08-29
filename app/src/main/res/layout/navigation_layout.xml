@@ -11,46 +11,85 @@
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/navigation_rec"
+        android:background="@drawable/bg_bottom_navigation"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/tent_navigation"
-            android:background="?selectableItemBackgroundBorderless"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="30dp"
-            android:contentDescription="@string/tent" />
+            android:weightSum="1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/courses_black_white"
-            android:background="?selectableItemBackgroundBorderless"
-            android:layout_marginTop="27dp"
-            android:layout_marginStart="100dp"
-            android:contentDescription="@string/courses" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0.4"
+                android:weightSum="1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/community_navigation"
-            android:background="?selectableItemBackgroundBorderless"
-            android:layout_gravity="end"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="100dp"
-            android:contentDescription="@string/community" />
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/tent_navigation"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/tent"
+                    tools:ignore="NestedWeights" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/settings_navigation"
-            android:background="?selectableItemBackgroundBorderless"
-            android:layout_gravity="end"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="22dp"
-            android:contentDescription="@string/settings" />
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/courses_navigation"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:contentDescription="@string/courses" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                tools:ignore="UselessLeaf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_gravity="end"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/community_navigation"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:contentDescription="@string/community"
+                    tools:ignore="NestedWeights" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/settings_navigation"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="22dp"
+                    android:contentDescription="@string/settings" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
