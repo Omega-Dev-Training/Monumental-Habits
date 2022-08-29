@@ -57,4 +57,9 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">#FDA758</item>
     </style>
+
+    <style name="ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/eggplant</item>
+    </style>
+
 </resources>

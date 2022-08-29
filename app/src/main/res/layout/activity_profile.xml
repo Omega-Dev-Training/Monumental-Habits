@@ -5,8 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3E9"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/oneview">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
@@ -554,5 +554,6 @@
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/menu"
         tools:ignore="SpeakableTextPresentCheck" />
+
 </RelativeLayout>
 </LinearLayout>
