@@ -143,230 +143,230 @@
                         android:id="@+id/day_box_1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/rectangle_motivation"
+                        android:layout_alignParentStart="true"
                         android:layout_marginStart="17dp"
                         android:layout_marginTop="19dp"
-                        android:layout_alignParentStart="true"
-                        android:contentDescription="@string/day_box_1"/>
+                        android:contentDescription="@string/day_box_1"
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number1"
                         style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:text="@string/_17"
-                        android:gravity="center"
-                        android:layout_alignTop="@+id/day_box_1"
-                        android:layout_alignBottom="@+id/day_box_1"
                         android:layout_alignStart="@+id/day_box_1"
-                        android:layout_alignEnd="@+id/day_box_1"/>
+                        android:layout_alignTop="@+id/day_box_1"
+                        android:layout_alignEnd="@+id/day_box_1"
+                        android:layout_alignBottom="@+id/day_box_1"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="@string/_17" />
 
                     <TextView
                         android:id="@+id/sunday_1"
                         style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="@string/sun"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/number1"
                         android:layout_alignTop="@+id/number1"
                         android:layout_alignEnd="@+id/number1"
-                        android:layout_alignBottom="@+id/number1" />
+                        android:layout_alignBottom="@+id/number1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/sun" />
 
                     <ImageView
                         android:id="@+id/day_box_2"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
-
                         android:layout_toRightOf="@+id/day_box_1"
-                        android:contentDescription="@string/day_box_2" />
+
+                        android:contentDescription="@string/day_box_2"
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number2"
                         style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:text="@string/_18"
-                        android:gravity="center"
                         android:layout_alignStart="@+id/day_box_2"
-                        android:layout_alignEnd="@+id/day_box_2"
                         android:layout_alignTop="@+id/day_box_2"
-                        android:layout_alignBottom="@+id/day_box_2" />
+                        android:layout_alignEnd="@+id/day_box_2"
+                        android:layout_alignBottom="@+id/day_box_2"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="@string/_18" />
 
                     <TextView
                         android:id="@+id/monday1"
                         style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/mon"
-                        android:gravity="center_horizontal"
                         android:layout_alignStart="@+id/number2"
-                        android:layout_alignEnd="@+id/number2"
                         android:layout_alignTop="@+id/number2"
-                        android:layout_alignBottom="@+id/number2" />
+                        android:layout_alignEnd="@+id/number2"
+                        android:layout_alignBottom="@+id/number2"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/mon" />
 
                     <ImageView
                         android:id="@+id/day_box_3"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
                         android:layout_toRightOf="@+id/day_box_2"
-                        android:contentDescription="@string/day_box_3"/>
+                        android:contentDescription="@string/day_box_3"
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number3"
+                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/_19"
-                        style="@style/NumberHabitsStyle"
+                        android:layout_alignStart="@+id/day_box_3"
+                        android:layout_alignTop="@+id/day_box_3"
+                        android:layout_alignEnd="@+id/day_box_3"
+                        android:layout_alignBottom="@+id/day_box_3"
                         android:gravity="center"
                         android:paddingTop="10dp"
-                        android:layout_alignStart="@+id/day_box_3"
-                        android:layout_alignEnd="@+id/day_box_3"
-                        android:layout_alignTop="@+id/day_box_3"
-                        android:layout_alignBottom="@+id/day_box_3" />
+                        android:text="@string/_19" />
 
                     <TextView
                         android:id="@+id/tuesday1"
+                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/tue"
-                        style="@style/DayOfWeekStyle"
-                        android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/number3"
-                        android:layout_alignEnd="@+id/number3"
                         android:layout_alignTop="@+id/number3"
-                        android:layout_alignBottom="@+id/number3" />
+                        android:layout_alignEnd="@+id/number3"
+                        android:layout_alignBottom="@+id/number3"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tue" />
 
                     <ImageView
                         android:id="@+id/day_box_4"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
+                        android:layout_toRightOf="@+id/day_box_3"
                         android:contentDescription="@string/day_box_4"
-                        android:layout_toRightOf="@+id/day_box_3"/>
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number4"
 
+                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/_20"
-                        style="@style/NumberHabitsStyle"
+                        android:layout_alignStart="@+id/day_box_4"
+                        android:layout_alignTop="@+id/day_box_4"
+                        android:layout_alignEnd="@+id/day_box_4"
+                        android:layout_alignBottom="@+id/day_box_4"
                         android:gravity="center"
                         android:paddingTop="10dp"
-                        android:layout_alignStart="@+id/day_box_4"
-                        android:layout_alignEnd="@+id/day_box_4"
-                        android:layout_alignTop="@+id/day_box_4"
-                        android:layout_alignBottom="@+id/day_box_4" />
+                        android:text="@string/_20" />
 
                     <TextView
                         android:id="@+id/wednesday1"
+                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/wed"
-                        style="@style/DayOfWeekStyle"
-                        android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/number4"
-                        android:layout_alignEnd="@+id/number4"
                         android:layout_alignTop="@+id/number4"
-                        android:layout_alignBottom="@+id/number4"/>
+                        android:layout_alignEnd="@+id/number4"
+                        android:layout_alignBottom="@+id/number4"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/wed" />
 
                     <ImageView
                         android:id="@+id/day_box_5"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
                         android:layout_toRightOf="@+id/day_box_4"
-                        android:contentDescription="@string/day_box_5"/>
+                        android:contentDescription="@string/day_box_5"
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number5"
                         style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/_21"
+                        android:layout_alignStart="@+id/day_box_5"
+                        android:layout_alignTop="@+id/day_box_5"
+                        android:layout_alignEnd="@+id/day_box_5"
+                        android:layout_alignBottom="@+id/day_box_5"
                         android:gravity="center"
                         android:paddingTop="10dp"
-                        android:layout_alignStart="@+id/day_box_5"
-                        android:layout_alignEnd="@+id/day_box_5"
-                        android:layout_alignTop="@+id/day_box_5"
-                        android:layout_alignBottom="@+id/day_box_5"/>
+                        android:text="@string/_21" />
 
                     <TextView
                         android:id="@+id/thursday1"
+                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/thu"
-                        style="@style/DayOfWeekStyle"
-                        android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/number5"
-                        android:layout_alignEnd="@+id/number5"
                         android:layout_alignTop="@+id/number5"
-                        android:layout_alignBottom="@+id/number5" />
+                        android:layout_alignEnd="@+id/number5"
+                        android:layout_alignBottom="@+id/number5"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/thu" />
 
                     <ImageView
                         android:id="@+id/now_date_vector"
                         android:layout_width="16dp"
                         android:layout_height="15dp"
-                        android:src="@drawable/date_vector"
-                        android:layout_marginEnd="7dp"
-                        android:layout_marginTop="15dp"
                         android:layout_alignStart="@+id/day_box_5"
                         android:layout_alignEnd="@+id/day_box_5"
-                        android:contentDescription="@string/now_date_vector" />
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="7dp"
+                        android:contentDescription="@string/now_date_vector"
+                        android:src="@drawable/date_vector" />
 
                     <ImageView
                         android:id="@+id/day_box_6"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
                         android:layout_toRightOf="@+id/day_box_5"
-                        android:contentDescription="@string/day_box_6"/>
+                        android:contentDescription="@string/day_box_6"
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number6"
+                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/_22"
-                        style="@style/NumberHabitsStyle"
+                        android:layout_alignStart="@+id/day_box_6"
+                        android:layout_alignTop="@+id/day_box_6"
+                        android:layout_alignEnd="@+id/day_box_6"
+                        android:layout_alignBottom="@+id/day_box_6"
                         android:gravity="center"
                         android:paddingTop="10dp"
-                        android:layout_alignStart="@+id/day_box_6"
-                        android:layout_alignEnd="@+id/day_box_6"
-                        android:layout_alignTop="@+id/day_box_6"
-                        android:layout_alignBottom="@+id/day_box_6"/>
+                        android:text="@string/_22" />
 
                     <TextView
                         android:id="@+id/friday1"
+                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/fri"
-                        style="@style/DayOfWeekStyle"
-                        android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/number6"
-                        android:layout_alignEnd="@+id/number6"
                         android:layout_alignTop="@+id/number6"
-                        android:layout_alignBottom="@+id/number6"/>
+                        android:layout_alignEnd="@+id/number6"
+                        android:layout_alignBottom="@+id/number6"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/fri" />
 
                     <ImageView
                         android:id="@+id/day_box_7"
@@ -375,220 +375,220 @@
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
                         android:layout_marginEnd="20dp"
-                        android:src="@drawable/rectangle_motivation"
                         android:layout_toRightOf="@+id/day_box_6"
-                        android:contentDescription="@string/day_box_6" />
+                        android:contentDescription="@string/day_box_6"
+                        android:src="@drawable/rectangle_motivation" />
 
                     <TextView
                         android:id="@+id/number7"
+                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/_23"
-                        style="@style/NumberHabitsStyle"
+                        android:layout_alignStart="@+id/day_box_7"
+                        android:layout_alignTop="@+id/day_box_7"
+                        android:layout_alignEnd="@+id/day_box_7"
+                        android:layout_alignBottom="@+id/day_box_7"
                         android:gravity="center"
                         android:paddingTop="10dp"
-                        android:layout_alignStart="@+id/day_box_7"
-                        android:layout_alignEnd="@+id/day_box_7"
-                        android:layout_alignTop="@+id/day_box_7"
-                        android:layout_alignBottom="@+id/day_box_7"/>
+                        android:text="@string/_23" />
 
                     <TextView
                         android:id="@+id/saturday1"
+                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/sat"
-                        style="@style/DayOfWeekStyle"
+                        android:layout_alignStart="@+id/number7"
+                        android:layout_alignTop="@+id/number7"
+                        android:layout_alignEnd="@+id/number7"
+                        android:layout_alignBottom="@+id/number7"
                         android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
-                        android:layout_alignStart="@+id/number7"
-                        android:layout_alignEnd="@+id/number7"
-                        android:layout_alignTop="@+id/number7"
-                        android:layout_alignBottom="@+id/number7"/>
+                        android:text="@string/sat" />
 
                     <ImageView
                         android:id="@+id/rectangle_for_result_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="13dp"
-                        android:src="@drawable/rectangle_for_result"
                         android:layout_below="@+id/day_box_1"
-                        android:contentDescription="@string/rectangle_for_result" />
+                        android:layout_marginTop="13dp"
+                        android:contentDescription="@string/rectangle_for_result"
+                        android:src="@drawable/rectangle_for_result" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="16dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
-                        android:contentDescription="@string/yellow_rec_10_1"/>
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="@string/yellow_rec_10_1"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_100_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_100"
-                        android:paddingTop="10dp"
                         android:layout_alignStart="@+id/yellow_rec_10_1"
                         android:layout_alignTop="@+id/yellow_rec_10_1"
                         android:layout_alignEnd="@+id/yellow_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_100_1"/>
+                        android:contentDescription="@string/yellow_rec_100_1"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/rectangle_habits_yellow_100" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/yellow_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_100_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_100"
-                        android:paddingTop="10dp"
                         android:layout_alignStart="@+id/yellow_rec_10_2"
                         android:layout_alignTop="@+id/yellow_rec_10_2"
                         android:layout_alignEnd="@+id/yellow_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_100_2" />
+                        android:contentDescription="@string/yellow_rec_100_2"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/rectangle_habits_yellow_100" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/yellow_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_triangle_3"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/triangle_habits_yellow"
+                        android:layout_alignStart="@+id/yellow_rec_10_3"
+                        android:layout_alignTop="@+id/yellow_rec_10_3"
+                        android:layout_alignEnd="@+id/yellow_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_3"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_alignStart="@+id/yellow_rec_10_3"
-                        android:layout_alignEnd="@+id/yellow_rec_10_3"
-                        android:layout_alignTop="@+id/yellow_rec_10_3"
-                        android:contentDescription="@string/yellow_triangle_3"/>
+                        android:src="@drawable/triangle_habits_yellow" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/yellow_rec_10_3"
-                        android:contentDescription="@string/yellow_rec_10_4"/>
+                        android:contentDescription="@string/yellow_rec_10_4"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_100_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/yellow_rec_10_4"
-                        android:layout_alignEnd="@+id/yellow_rec_10_4"
                         android:layout_alignTop="@+id/yellow_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_100_4"/>
+                        android:layout_alignEnd="@+id/yellow_rec_10_4"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_4"
+                        android:src="@drawable/rectangle_habits_yellow_100" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/yellow_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_10_5"/>
+                        android:contentDescription="@string/yellow_rec_10_5"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_100_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/yellow_rec_10_5"
-                        android:layout_alignEnd="@+id/yellow_rec_10_5"
                         android:layout_alignTop="@+id/yellow_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_100_5" />
+                        android:layout_alignEnd="@+id/yellow_rec_10_5"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_5"
+                        android:src="@drawable/rectangle_habits_yellow_100" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/yellow_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_10_6"/>
+                        android:contentDescription="@string/yellow_rec_10_6"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_100_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/yellow_rec_10_6"
-                        android:layout_alignEnd="@+id/yellow_rec_10_6"
                         android:layout_alignTop="@+id/yellow_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_100_6" />
+                        android:layout_alignEnd="@+id/yellow_rec_10_6"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_6"
+                        android:src="@drawable/rectangle_habits_yellow_100" />
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_yellow_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_1"
                         android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/yellow_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_10_7"/>
+                        android:contentDescription="@string/yellow_rec_10_7"
+                        android:src="@drawable/rectangle_habits_yellow_10" />
 
                     <ImageView
                         android:id="@+id/yellow_triangle_7"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/triangle_habits_yellow"
+                        android:layout_alignStart="@+id/yellow_rec_10_7"
+                        android:layout_alignTop="@+id/yellow_rec_10_7"
+                        android:layout_alignEnd="@+id/yellow_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_7"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_alignStart="@+id/yellow_rec_10_7"
-                        android:layout_alignEnd="@+id/yellow_rec_10_7"
-                        android:layout_alignTop="@+id/yellow_rec_10_7"
-                        android:contentDescription="@string/yellow_triangle_7" />
+                        android:src="@drawable/triangle_habits_yellow" />
 
                     <ImageView
                         android:id="@+id/rectangle_for_result_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_for_result"
-                        android:layout_marginTop="8dp"
                         android:layout_below="@+id/rectangle_for_result_1"
-                        android:contentDescription="@string/rectangle_for_result_2" />
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@string/rectangle_for_result_2"
+                        android:src="@drawable/rectangle_for_result" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="16dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
-                        android:contentDescription="@string/yellow_rec_10_1"/>
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="@string/yellow_rec_10_1"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_rec_100_1"
@@ -607,56 +607,56 @@
                         android:id="@+id/red_rec_10_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/red_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_rec_100_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/red_rec_10_2"
-                        android:layout_alignEnd="@+id/red_rec_10_2"
                         android:layout_alignTop="@+id/red_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_100_2" />
+                        android:layout_alignEnd="@+id/red_rec_10_2"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_2"
+                        android:src="@drawable/rectangle_habits_red_100" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/red_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_triangle_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/red_rec_10_3"
-                        android:layout_alignEnd="@+id/red_rec_10_3"
                         android:layout_alignTop="@+id/red_rec_10_3"
-                        android:contentDescription="@string/yellow_triangle_3"/>
+                        android:layout_alignEnd="@+id/red_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_3"
+                        android:src="@drawable/rectangle_habits_red_100" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/red_rec_10_3"
-                        android:contentDescription="@string/yellow_rec_10_4"/>
+                        android:contentDescription="@string/yellow_rec_10_4"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_rec_100_4"
@@ -675,374 +675,382 @@
                         android:id="@+id/red_rec_10_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/red_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_10_5"/>
+                        android:contentDescription="@string/yellow_rec_10_5"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_rec_100_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/red_rec_10_5"
-                        android:layout_alignEnd="@+id/red_rec_10_5"
                         android:layout_alignTop="@+id/red_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_100_5"/>
+                        android:layout_alignEnd="@+id/red_rec_10_5"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_5"
+                        android:src="@drawable/rectangle_habits_red_100" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/red_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_10_6"/>
+                        android:contentDescription="@string/yellow_rec_10_6"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_rec_100_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/red_rec_10_6"
-                        android:layout_alignEnd="@+id/red_rec_10_6"
                         android:layout_alignTop="@+id/red_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_100_6"/>
+                        android:layout_alignEnd="@+id/red_rec_10_6"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_6"
+                        android:src="@drawable/rectangle_habits_red_100" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_2"
                         android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/red_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_10_7"/>
+                        android:contentDescription="@string/yellow_rec_10_7"
+                        android:src="@drawable/rectangle_habits_red_10" />
 
                     <ImageView
                         android:id="@+id/red_triangle_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_red_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/red_rec_10_7"
-                        android:layout_alignEnd="@+id/red_rec_10_7"
                         android:layout_alignTop="@+id/red_rec_10_7"
-                        android:contentDescription="@string/yellow_triangle_7"/>
+                        android:layout_alignEnd="@+id/red_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_7"
+                        android:src="@drawable/rectangle_habits_red_100" />
 
                     <ImageView
                         android:id="@+id/rectangle_for_result_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_for_result"
-                        android:layout_marginTop="8dp"
                         android:layout_below="@+id/rectangle_for_result_2"
-                        android:contentDescription="@string/rectangle_for_result_3" />
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@string/rectangle_for_result_3"
+                        android:src="@drawable/rectangle_for_result" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="16dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
-                        android:contentDescription="@string/yellow_rec_10_1"/>
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="@string/yellow_rec_10_1"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_rec_100_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/blue_rec_10_1"
-                        android:layout_alignEnd="@+id/blue_rec_10_1"
                         android:layout_alignTop="@+id/blue_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_100_1" />
+                        android:layout_alignEnd="@+id/blue_rec_10_1"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_1"
+                        android:src="@drawable/rectangle_habits_blue_100" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/blue_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_rec_100_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/blue_rec_10_2"
-                        android:layout_alignEnd="@+id/blue_rec_10_2"
                         android:layout_alignTop="@+id/blue_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_100_2" />
+                        android:layout_alignEnd="@+id/blue_rec_10_2"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_2"
+                        android:src="@drawable/rectangle_habits_blue_100" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/blue_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_triangle_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/blue_rec_10_3"
-                        android:layout_alignEnd="@+id/blue_rec_10_3"
                         android:layout_alignTop="@+id/blue_rec_10_3"
-                        android:contentDescription="@string/yellow_triangle_3"/>
+                        android:layout_alignEnd="@+id/blue_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_3"
+                        android:src="@drawable/rectangle_habits_blue_100" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/blue_rec_10_3"
-                        android:contentDescription="@string/yellow_rec_10_4"/>
+                        android:contentDescription="@string/yellow_rec_10_4"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_rec_100_4"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_alignStart="@+id/blue_rec_10_4"
+                        android:layout_alignTop="@+id/blue_rec_10_4"
+                        android:layout_alignEnd="@+id/blue_rec_10_4"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_4"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        android:src="@drawable/triangle_habits_blue"
-                        android:layout_marginTop="10dp"
-                        android:layout_alignStart="@+id/blue_rec_10_4"
-                        android:layout_alignEnd="@+id/blue_rec_10_4"
-                        android:layout_alignTop="@+id/blue_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_100_4" />
+                        android:src="@drawable/triangle_habits_blue" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/blue_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_10_5"/>
+                        android:contentDescription="@string/yellow_rec_10_5"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/blue_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_10_6"/>
+                        android:contentDescription="@string/yellow_rec_10_6"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_rec_10_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_blue_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_3"
                         android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/blue_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_10_7"/>
+                        android:contentDescription="@string/yellow_rec_10_7"
+                        android:src="@drawable/rectangle_habits_blue_10" />
 
                     <ImageView
                         android:id="@+id/blue_triangle_7"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_alignStart="@+id/blue_rec_10_7"
+                        android:layout_alignTop="@+id/blue_rec_10_7"
+                        android:layout_alignEnd="@+id/blue_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_7"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        android:src="@drawable/triangle_habits_blue"
-                        android:layout_marginTop="10dp"
-                        android:layout_alignStart="@+id/blue_rec_10_7"
-                        android:layout_alignEnd="@+id/blue_rec_10_7"
-                        android:layout_alignTop="@+id/blue_rec_10_7"
-                        android:contentDescription="@string/yellow_triangle_7"/>
+                        android:src="@drawable/triangle_habits_blue" />
 
                     <ImageView
                         android:id="@+id/rectangle_for_result_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_for_result"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="250dp"
                         android:layout_below="@+id/rectangle_for_result_3"
-                        android:contentDescription="@string/rectangle_for_result_4" />
+                        android:layout_marginTop="8dp"
+
+                        android:contentDescription="@string/rectangle_for_result_4"
+                        android:src="@drawable/rectangle_for_result" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="16dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
-                        android:contentDescription="@string/yellow_rec_10_1"/>
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="@string/yellow_rec_10_1"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_rec_100_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_1"
-                        android:layout_alignEnd="@+id/purple_rec_10_1"
                         android:layout_alignTop="@+id/purple_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_100_1" />
+                        android:layout_alignEnd="@+id/purple_rec_10_1"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_1"
+                        android:src="@drawable/rectangle_habits_purple_100" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/purple_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_rec_100_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_2"
-                        android:layout_alignEnd="@+id/purple_rec_10_2"
                         android:layout_alignTop="@+id/purple_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_100_2" />
+                        android:layout_alignEnd="@+id/purple_rec_10_2"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_2"
+                        android:src="@drawable/rectangle_habits_purple_100" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/purple_rec_10_2"
-                        android:contentDescription="@string/yellow_rec_10_2"/>
+                        android:contentDescription="@string/yellow_rec_10_2"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_triangle_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_3"
-                        android:layout_alignEnd="@+id/purple_rec_10_3"
                         android:layout_alignTop="@+id/purple_rec_10_3"
-                        android:contentDescription="@string/yellow_triangle_3"/>
+                        android:layout_alignEnd="@+id/purple_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_3"
+                        android:src="@drawable/rectangle_habits_purple_100" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/purple_rec_10_3"
-                        android:contentDescription="@string/yellow_rec_10_4"/>
+                        android:contentDescription="@string/yellow_rec_10_4"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_rec_100_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_4"
-                        android:layout_alignEnd="@+id/purple_rec_10_4"
                         android:layout_alignTop="@+id/purple_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_100_4" />
+                        android:layout_alignEnd="@+id/purple_rec_10_4"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_4"
+                        android:src="@drawable/rectangle_habits_purple_100" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/purple_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_10_5"/>
+                        android:contentDescription="@string/yellow_rec_10_5"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_rec_100_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_5"
-                        android:layout_alignEnd="@+id/purple_rec_10_5"
                         android:layout_alignTop="@+id/purple_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_100_5" />
+                        android:layout_alignEnd="@+id/purple_rec_10_5"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_5"
+                        android:src="@drawable/rectangle_habits_purple_100" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/purple_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_10_6"/>
+                        android:contentDescription="@string/yellow_rec_10_6"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_rec_100_6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_6"
-                        android:layout_alignEnd="@+id/purple_rec_10_6"
                         android:layout_alignTop="@+id/purple_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_100_6" />
+                        android:layout_alignEnd="@+id/purple_rec_10_6"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_6"
+                        android:src="@drawable/rectangle_habits_purple_100" />
 
                     <ImageView
                         android:id="@+id/purple_rec_10_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_10"
-                        android:layout_marginStart="2dp"
                         android:layout_alignTop="@+id/rectangle_for_result_4"
                         android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_marginStart="2dp"
                         android:layout_toRightOf="@+id/purple_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_10_7"/>
+                        android:contentDescription="@string/yellow_rec_10_7"
+                        android:src="@drawable/rectangle_habits_purple_10" />
 
                     <ImageView
                         android:id="@+id/purple_triangle_7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_habits_purple_100"
-                        android:layout_marginTop="10dp"
                         android:layout_alignStart="@+id/purple_rec_10_7"
-                        android:layout_alignEnd="@+id/purple_rec_10_7"
                         android:layout_alignTop="@+id/purple_rec_10_7"
-                        android:contentDescription="@string/yellow_triangle_7" />
+                        android:layout_alignEnd="@+id/purple_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_triangle_7"
+                        android:src="@drawable/rectangle_habits_purple_100" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rectangle_for_result_4"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="250dp"
+                        android:src="@drawable/rectangle_for_result" />
 
                 </RelativeLayout>
 
@@ -1147,6 +1155,28 @@
                 app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_text_4"
                 app:layout_constraintStart_toStartOf="@+id/rectangle_for_text_4"
                 app:layout_constraintTop_toTopOf="@+id/rectangle_for_text_4"/>
+
+            <ImageView
+                android:id="@+id/rectangle_for_text_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rectangle_for_text"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle_for_text_4"
+                android:contentDescription="@string/rectangle_for_text_3"/>
+
+            <TextView
+                android:id="@+id/habits_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/water_plans"
+                style="@style/TextHabitsStyle"
+                android:layout_marginStart="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_text_5"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_for_text_5"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_for_text_5"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
