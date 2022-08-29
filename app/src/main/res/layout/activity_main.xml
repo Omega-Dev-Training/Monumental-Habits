@@ -10,9 +10,9 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="60dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="25dp"
+        android:layout_marginVertical="20dp"
         android:background="#00000000"
         android:clickable="true"
         android:focusable="true"
@@ -152,7 +152,6 @@
                                 android:id="@+id/imageView1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -307,6 +306,12 @@
                                 android:id="@+id/textView14"
                                 style="@style/CenterCostPremium" />
 
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:srcCompat="@drawable/vector_119"/>
+
                             <TextView
                                 android:id="@+id/textView15"
                                 style="@style/BottomCostPremium"
@@ -374,6 +379,12 @@
                                     android:id="@+id/textView17"
                                     style="@style/CenterCostPremium" />
 
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    app:srcCompat="@drawable/vector_119"/>
+
                                 <TextView
                                     android:id="@+id/textView16"
                                     android:text="Yearly"
@@ -406,6 +417,12 @@
                             <TextView
                                 android:id="@+id/textView21"
                                 style="@style/CenterCostPremium" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                app:srcCompat="@drawable/vector_119"/>
 
                             <TextView
                                 android:id="@+id/textView22"
