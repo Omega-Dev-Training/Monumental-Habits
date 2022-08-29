@@ -17,40 +17,43 @@
         tools:layout_editor_absoluteY="204dp"
         android:contentDescription="@string/bk_tracking" />
 
-    <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/beige"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-            app:navigationIcon="@drawable/menu_icon"
-            android:paddingTop="39dp"
-            android:paddingStart="10dp">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        app:menu="@menu/menu"
+        app:title="Homepage"
+        app:titleCentered="true"
+        app:titleTextColor="@color/purpuric"
+        app:titleTextAppearance="@style/TitleStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:navigationIcon="@drawable/menu_icon"
+        android:paddingTop="39dp"
+        android:paddingStart="10dp"
+        android:clickable="true"
+        android:focusable="true">
 
-            <ImageView
-                android:id="@+id/avatar"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:src="@drawable/avatar"
-                android:layout_gravity="right"
-                android:layout_marginEnd="27dp"
-                android:contentDescription="@string/avatar"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/avatar"-->
+<!--            android:layout_width="44dp"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:src="@drawable/avatar"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_marginEnd="27dp"-->
+<!--            android:background="?selectableItemBackgroundBorderless"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:contentDescription="@string/avatar"/>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/homepage"
-                android:fontFamily="@font/manrope_bold"
-                android:textAppearance="@style/TitleStyle"
-                android:layout_gravity="center"/>
-
-        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.MaterialToolbar>
 
     <ScrollView
         android:id="@+id/scrollview_vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
+        android:overScrollMode="never"
         android:background="#0000"
         android:scrollbars="none"
         android:orientation="vertical"
@@ -109,11 +112,11 @@
                         android:id="@+id/author"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/author"
-                        android:layout_gravity="bottom"
-                        android:textAppearance="@style/AuthorTextStyle"
+                        android:layout_alignStart="@+id/motivation_phrase"
                         android:layout_alignBottom="@+id/motivation_phrase"
-                        android:layout_alignStart="@+id/motivation_phrase"/>
+                        android:layout_gravity="bottom"
+                        android:text="@string/author"
+                        android:textAppearance="@style/AuthorTextStyle" />
 
                 </RelativeLayout>
 
@@ -124,12 +127,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
+                android:fillViewport="true"
+                android:overScrollMode="never"
                 android:orientation="horizontal"
                 android:layout_marginStart="138dp"
                 app:layout_constraintTop_toBottomOf="@+id/cardview"
                 app:layout_constraintStart_toStartOf="parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <RelativeLayout
                     android:id="@+id/constraint_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -138,59 +143,61 @@
                         android:id="@+id/day_box_1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="17dp"
                         android:layout_marginTop="19dp"
-                        android:contentDescription="@string/day_box_1"
-                        android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info" />
+                        android:layout_alignParentStart="true"
+                        android:contentDescription="@string/day_box_1"/>
 
                     <TextView
                         android:id="@+id/number1"
                         style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        android:paddingTop="10dp"
                         android:text="@string/_17"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_1"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_1"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_1"
-                        app:layout_constraintTop_toBottomOf="@+id/sunday_1" />
+                        android:gravity="center"
+                        android:layout_alignTop="@+id/day_box_1"
+                        android:layout_alignBottom="@+id/day_box_1"
+                        android:layout_alignStart="@+id/day_box_1"
+                        android:layout_alignEnd="@+id/day_box_1"/>
 
                     <TextView
                         android:id="@+id/sunday_1"
                         style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
                         android:text="@string/sun"
-                        app:layout_constraintBottom_toTopOf="@+id/number1"
-                        app:layout_constraintEnd_toEndOf="@+id/number1"
-                        app:layout_constraintStart_toStartOf="@+id/number1"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_1" />
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/number1"
+                        android:layout_alignTop="@+id/number1"
+                        android:layout_alignEnd="@+id/number1"
+                        android:layout_alignBottom="@+id/number1" />
 
                     <ImageView
                         android:id="@+id/day_box_2"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
-                        android:contentDescription="@string/day_box_2"
-                        android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintStart_toEndOf="@+id/day_box_1"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info" />
+
+                        android:layout_toRightOf="@+id/day_box_1"
+                        android:contentDescription="@string/day_box_2" />
 
                     <TextView
                         android:id="@+id/number2"
                         style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        android:paddingTop="10dp"
                         android:text="@string/_18"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_2"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_2"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_2"
-                        app:layout_constraintTop_toBottomOf="@+id/monday1" />
+                        android:gravity="center"
+                        android:layout_alignStart="@+id/day_box_2"
+                        android:layout_alignEnd="@+id/day_box_2"
+                        android:layout_alignTop="@+id/day_box_2"
+                        android:layout_alignBottom="@+id/day_box_2" />
 
                     <TextView
                         android:id="@+id/monday1"
@@ -199,162 +206,167 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="@string/mon"
-                        app:layout_constraintBottom_toTopOf="@+id/number2"
-                        app:layout_constraintEnd_toEndOf="@+id/number2"
-                        app:layout_constraintStart_toStartOf="@+id/number2"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_2" />
+                        android:gravity="center_horizontal"
+                        android:layout_alignStart="@+id/number2"
+                        android:layout_alignEnd="@+id/number2"
+                        android:layout_alignTop="@+id/number2"
+                        android:layout_alignBottom="@+id/number2" />
 
                     <ImageView
                         android:id="@+id/day_box_3"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
-                        android:contentDescription="@string/day_box_3"
-                        android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintStart_toEndOf="@+id/day_box_2"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info" />
+                        android:layout_toRightOf="@+id/day_box_2"
+                        android:contentDescription="@string/day_box_3"/>
 
                     <TextView
                         android:id="@+id/number3"
-                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:text="@string/_19"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_3"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_3"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_3"
-                        app:layout_constraintTop_toBottomOf="@+id/tuesday1" />
+                        style="@style/NumberHabitsStyle"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/day_box_3"
+                        android:layout_alignEnd="@+id/day_box_3"
+                        android:layout_alignTop="@+id/day_box_3"
+                        android:layout_alignBottom="@+id/day_box_3" />
 
                     <TextView
                         android:id="@+id/tuesday1"
-                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:text="@string/tue"
-                        app:layout_constraintBottom_toTopOf="@+id/number3"
-                        app:layout_constraintEnd_toEndOf="@+id/number3"
-                        app:layout_constraintStart_toStartOf="@+id/number3"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_3" />
+                        style="@style/DayOfWeekStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/number3"
+                        android:layout_alignEnd="@+id/number3"
+                        android:layout_alignTop="@+id/number3"
+                        android:layout_alignBottom="@+id/number3" />
 
                     <ImageView
                         android:id="@+id/day_box_4"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
                         android:contentDescription="@string/day_box_4"
-                        android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintStart_toEndOf="@+id/day_box_3"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info" />
+                        android:layout_toRightOf="@+id/day_box_3"/>
 
                     <TextView
                         android:id="@+id/number4"
-                        style="@style/NumberHabitsStyle"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:text="@string/_20"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_4"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_4"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_4"
-                        app:layout_constraintTop_toBottomOf="@+id/wednesday1" />
+                        style="@style/NumberHabitsStyle"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/day_box_4"
+                        android:layout_alignEnd="@+id/day_box_4"
+                        android:layout_alignTop="@+id/day_box_4"
+                        android:layout_alignBottom="@+id/day_box_4" />
 
                     <TextView
                         android:id="@+id/wednesday1"
-                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:text="@string/wed"
-                        app:layout_constraintBottom_toTopOf="@+id/number4"
-                        app:layout_constraintEnd_toEndOf="@+id/number4"
-                        app:layout_constraintStart_toStartOf="@+id/number4"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_4" />
+                        style="@style/DayOfWeekStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/number4"
+                        android:layout_alignEnd="@+id/number4"
+                        android:layout_alignTop="@+id/number4"
+                        android:layout_alignBottom="@+id/number4"/>
 
                     <ImageView
                         android:id="@+id/day_box_5"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
-                        android:contentDescription="@string/day_box_5"
-                        android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintStart_toEndOf="@+id/day_box_4"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info" />
+                        android:layout_toRightOf="@+id/day_box_4"
+                        android:contentDescription="@string/day_box_5"/>
 
                     <TextView
                         android:id="@+id/number5"
                         style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:text="@string/_21"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_5"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_5"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_5"
-                        app:layout_constraintTop_toBottomOf="@+id/thursday1" />
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/day_box_5"
+                        android:layout_alignEnd="@+id/day_box_5"
+                        android:layout_alignTop="@+id/day_box_5"
+                        android:layout_alignBottom="@+id/day_box_5"/>
 
                     <TextView
                         android:id="@+id/thursday1"
-                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:text="@string/thu"
-                        app:layout_constraintBottom_toTopOf="@+id/number5"
-                        app:layout_constraintEnd_toEndOf="@+id/number5"
-                        app:layout_constraintStart_toStartOf="@+id/number5"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_5" />
+                        style="@style/DayOfWeekStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/number5"
+                        android:layout_alignEnd="@+id/number5"
+                        android:layout_alignTop="@+id/number5"
+                        android:layout_alignBottom="@+id/number5" />
 
                     <ImageView
                         android:id="@+id/now_date_vector"
-                        android:layout_width="26dp"
+                        android:layout_width="16dp"
                         android:layout_height="15dp"
                         android:src="@drawable/date_vector"
                         android:layout_marginEnd="7dp"
-                        android:layout_marginTop="-5dp"
-                        app:layout_constraintEnd_toEndOf="@+id/thursday1"
-                        app:layout_constraintStart_toStartOf="@id/thursday1"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_5"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignStart="@+id/day_box_5"
+                        android:layout_alignEnd="@+id/day_box_5"
                         android:contentDescription="@string/now_date_vector" />
 
                     <ImageView
                         android:id="@+id/day_box_6"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/rectangle_motivation"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="19dp"
-                        android:contentDescription="@string/day_box_6"
-                        android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintStart_toEndOf="@+id/day_box_5"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info" />
+                        android:layout_toRightOf="@+id/day_box_5"
+                        android:contentDescription="@string/day_box_6"/>
 
                     <TextView
                         android:id="@+id/number6"
-                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:text="@string/_22"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_6"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_6"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_6"
-                        app:layout_constraintTop_toBottomOf="@+id/friday1" />
+                        style="@style/NumberHabitsStyle"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/day_box_6"
+                        android:layout_alignEnd="@+id/day_box_6"
+                        android:layout_alignTop="@+id/day_box_6"
+                        android:layout_alignBottom="@+id/day_box_6"/>
 
                     <TextView
                         android:id="@+id/friday1"
-                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:text="@string/fri"
-                        app:layout_constraintBottom_toTopOf="@+id/number6"
-                        app:layout_constraintEnd_toEndOf="@+id/number6"
-                        app:layout_constraintStart_toStartOf="@+id/number6"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_6" />
+                        style="@style/DayOfWeekStyle"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/number6"
+                        android:layout_alignEnd="@+id/number6"
+                        android:layout_alignTop="@+id/number6"
+                        android:layout_alignBottom="@+id/number6"/>
 
                     <ImageView
                         android:id="@+id/day_box_7"
@@ -364,42 +376,42 @@
                         android:layout_marginTop="19dp"
                         android:layout_marginEnd="20dp"
                         android:src="@drawable/rectangle_motivation"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/day_box_6"
-                        app:layout_constraintTop_toTopOf="@+id/constraint_info"
-                        android:contentDescription="@string/day_box_6"/>
+                        android:layout_toRightOf="@+id/day_box_6"
+                        android:contentDescription="@string/day_box_6" />
 
                     <TextView
                         android:id="@+id/number7"
-                        style="@style/NumberHabitsStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:text="@string/_23"
-                        app:layout_constraintBottom_toBottomOf="@+id/day_box_7"
-                        app:layout_constraintEnd_toEndOf="@+id/day_box_7"
-                        app:layout_constraintStart_toStartOf="@+id/day_box_7"
-                        app:layout_constraintTop_toBottomOf="@+id/saturday1" />
+                        style="@style/NumberHabitsStyle"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/day_box_7"
+                        android:layout_alignEnd="@+id/day_box_7"
+                        android:layout_alignTop="@+id/day_box_7"
+                        android:layout_alignBottom="@+id/day_box_7"/>
 
                     <TextView
                         android:id="@+id/saturday1"
-                        style="@style/DayOfWeekStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:text="@string/sat"
-                        app:layout_constraintBottom_toTopOf="@+id/number7"
-                        app:layout_constraintEnd_toEndOf="@+id/number7"
-                        app:layout_constraintStart_toStartOf="@+id/number7"
-                        app:layout_constraintTop_toTopOf="@+id/day_box_7"/>
+                        style="@style/DayOfWeekStyle"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:layout_alignStart="@+id/number7"
+                        android:layout_alignEnd="@+id/number7"
+                        android:layout_alignTop="@+id/number7"
+                        android:layout_alignBottom="@+id/number7"/>
 
                     <ImageView
                         android:id="@+id/rectangle_for_result_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rectangle_for_result"
                         android:layout_marginTop="13dp"
-                        app:layout_constraintTop_toBottomOf="@+id/day_box_1"
+                        android:src="@drawable/rectangle_for_result"
+                        android:layout_below="@+id/day_box_1"
                         android:contentDescription="@string/rectangle_for_result" />
 
                     <ImageView
@@ -408,9 +420,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="16dp"
-                        app:layout_constraintStart_toStartOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
                         android:contentDescription="@string/yellow_rec_10_1"/>
 
                     <ImageView
@@ -418,11 +429,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_100"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_1"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_100_1" />
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_1"
+                        android:layout_alignTop="@+id/yellow_rec_10_1"
+                        android:layout_alignEnd="@+id/yellow_rec_10_1"
+                        android:contentDescription="@string/yellow_rec_100_1"/>
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_2"
@@ -430,9 +441,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/yellow_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_toRightOf="@+id/yellow_rec_10_1"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -440,10 +451,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_100"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_2"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_2"
+                        android:paddingTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_2"
+                        android:layout_alignTop="@+id/yellow_rec_10_2"
+                        android:layout_alignEnd="@+id/yellow_rec_10_2"
                         android:contentDescription="@string/yellow_rec_100_2" />
 
                     <ImageView
@@ -452,9 +463,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/yellow_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_toRightOf="@+id/yellow_rec_10_2"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -464,10 +475,10 @@
                         android:src="@drawable/triangle_habits_yellow"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_3"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_3"
+                        android:layout_alignEnd="@+id/yellow_rec_10_3"
+                        android:layout_alignTop="@+id/yellow_rec_10_3"
                         android:contentDescription="@string/yellow_triangle_3"/>
 
                     <ImageView
@@ -476,9 +487,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/yellow_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_toRightOf="@+id/yellow_rec_10_3"
                         android:contentDescription="@string/yellow_rec_10_4"/>
 
                     <ImageView
@@ -486,11 +497,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_100"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_4"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_100_4" />
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_4"
+                        android:layout_alignEnd="@+id/yellow_rec_10_4"
+                        android:layout_alignTop="@+id/yellow_rec_10_4"
+                        android:contentDescription="@string/yellow_rec_100_4"/>
 
                     <ImageView
                         android:id="@+id/yellow_rec_10_5"
@@ -498,9 +509,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/yellow_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_toRightOf="@+id/yellow_rec_10_4"
                         android:contentDescription="@string/yellow_rec_10_5"/>
 
                     <ImageView
@@ -508,10 +519,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_100"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_5"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_5"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_5"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_5"
+                        android:layout_alignEnd="@+id/yellow_rec_10_5"
+                        android:layout_alignTop="@+id/yellow_rec_10_5"
                         android:contentDescription="@string/yellow_rec_100_5" />
 
                     <ImageView
@@ -520,9 +531,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/yellow_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_toRightOf="@+id/yellow_rec_10_5"
                         android:contentDescription="@string/yellow_rec_10_6"/>
 
                     <ImageView
@@ -530,10 +541,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_100"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_6"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_6"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_6"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_6"
+                        android:layout_alignEnd="@+id/yellow_rec_10_6"
+                        android:layout_alignTop="@+id/yellow_rec_10_6"
                         android:contentDescription="@string/yellow_rec_100_6" />
 
                     <ImageView
@@ -542,9 +553,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_yellow_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/yellow_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_alignTop="@+id/rectangle_for_result_1"
+                        android:layout_alignBottom="@+id/rectangle_for_result_1"
+                        android:layout_toRightOf="@+id/yellow_rec_10_6"
                         android:contentDescription="@string/yellow_rec_10_7"/>
 
                     <ImageView
@@ -554,10 +565,10 @@
                         android:src="@drawable/triangle_habits_yellow"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        app:layout_constraintStart_toStartOf="@+id/yellow_rec_10_7"
-                        app:layout_constraintEnd_toEndOf="@+id/yellow_rec_10_7"
-                        app:layout_constraintTop_toTopOf="@+id/yellow_rec_10_7"
-                        app:layout_constraintBottom_toBottomOf="@+id/yellow_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/yellow_rec_10_7"
+                        android:layout_alignEnd="@+id/yellow_rec_10_7"
+                        android:layout_alignTop="@+id/yellow_rec_10_7"
                         android:contentDescription="@string/yellow_triangle_7" />
 
                     <ImageView
@@ -566,7 +577,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_for_result"
                         android:layout_marginTop="8dp"
-                        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_result_1"
+                        android:layout_below="@+id/rectangle_for_result_1"
                         android:contentDescription="@string/rectangle_for_result_2" />
 
                     <ImageView
@@ -575,23 +586,22 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="16dp"
-                        app:layout_constraintStart_toStartOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
                         android:contentDescription="@string/yellow_rec_10_1"/>
 
                     <ImageView
                         android:id="@+id/red_rec_100_1"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_alignStart="@+id/red_rec_10_1"
+                        android:layout_alignTop="@+id/red_rec_10_1"
+                        android:layout_alignEnd="@+id/red_rec_10_1"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_1"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        android:src="@drawable/triangle_habits_red"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_1"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_1"
-                        android:contentDescription="@string/yellow_rec_100_1" />
+                        android:src="@drawable/triangle_habits_red" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_2"
@@ -599,9 +609,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/red_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_toRightOf="@+id/red_rec_10_1"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -609,10 +619,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_100"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_2"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_2"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/red_rec_10_2"
+                        android:layout_alignEnd="@+id/red_rec_10_2"
+                        android:layout_alignTop="@+id/red_rec_10_2"
                         android:contentDescription="@string/yellow_rec_100_2" />
 
                     <ImageView
@@ -621,9 +631,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/red_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_toRightOf="@+id/red_rec_10_2"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -631,10 +641,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_100"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_3"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/red_rec_10_3"
+                        android:layout_alignEnd="@+id/red_rec_10_3"
+                        android:layout_alignTop="@+id/red_rec_10_3"
                         android:contentDescription="@string/yellow_triangle_3"/>
 
                     <ImageView
@@ -643,23 +653,23 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/red_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_toRightOf="@+id/red_rec_10_3"
                         android:contentDescription="@string/yellow_rec_10_4"/>
 
                     <ImageView
                         android:id="@+id/red_rec_100_4"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_alignStart="@+id/red_rec_10_4"
+                        android:layout_alignTop="@+id/red_rec_10_4"
+                        android:layout_alignEnd="@+id/red_rec_10_4"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yellow_rec_100_4"
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
-                        android:src="@drawable/triangle_habits_red"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_4"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_4"
-                        android:contentDescription="@string/yellow_rec_100_4" />
+                        android:src="@drawable/triangle_habits_red" />
 
                     <ImageView
                         android:id="@+id/red_rec_10_5"
@@ -667,9 +677,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/red_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_toRightOf="@+id/red_rec_10_4"
                         android:contentDescription="@string/yellow_rec_10_5"/>
 
                     <ImageView
@@ -677,11 +687,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_100"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_5"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_5"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_5"
-                        android:contentDescription="@string/yellow_rec_100_5" />
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/red_rec_10_5"
+                        android:layout_alignEnd="@+id/red_rec_10_5"
+                        android:layout_alignTop="@+id/red_rec_10_5"
+                        android:contentDescription="@string/yellow_rec_100_5"/>
 
                     <ImageView
                         android:id="@+id/red_rec_10_6"
@@ -689,9 +699,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/red_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_toRightOf="@+id/red_rec_10_5"
                         android:contentDescription="@string/yellow_rec_10_6"/>
 
                     <ImageView
@@ -699,11 +709,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_100"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_6"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_6"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_6"
-                        android:contentDescription="@string/yellow_rec_100_6" />
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/red_rec_10_6"
+                        android:layout_alignEnd="@+id/red_rec_10_6"
+                        android:layout_alignTop="@+id/red_rec_10_6"
+                        android:contentDescription="@string/yellow_rec_100_6"/>
 
                     <ImageView
                         android:id="@+id/red_rec_10_7"
@@ -711,9 +721,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/red_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_alignTop="@+id/rectangle_for_result_2"
+                        android:layout_alignBottom="@+id/rectangle_for_result_2"
+                        android:layout_toRightOf="@+id/red_rec_10_6"
                         android:contentDescription="@string/yellow_rec_10_7"/>
 
                     <ImageView
@@ -721,11 +731,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_red_100"
-                        app:layout_constraintStart_toStartOf="@+id/red_rec_10_7"
-                        app:layout_constraintEnd_toEndOf="@+id/red_rec_10_7"
-                        app:layout_constraintTop_toTopOf="@+id/red_rec_10_7"
-                        app:layout_constraintBottom_toBottomOf="@+id/red_rec_10_7"
-                        android:contentDescription="@string/yellow_triangle_7" />
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/red_rec_10_7"
+                        android:layout_alignEnd="@+id/red_rec_10_7"
+                        android:layout_alignTop="@+id/red_rec_10_7"
+                        android:contentDescription="@string/yellow_triangle_7"/>
 
                     <ImageView
                         android:id="@+id/rectangle_for_result_3"
@@ -733,7 +743,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_for_result"
                         android:layout_marginTop="8dp"
-                        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_result_2"
+                        android:layout_below="@+id/rectangle_for_result_2"
                         android:contentDescription="@string/rectangle_for_result_3" />
 
                     <ImageView
@@ -742,9 +752,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="16dp"
-                        app:layout_constraintStart_toStartOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
                         android:contentDescription="@string/yellow_rec_10_1"/>
 
                     <ImageView
@@ -752,10 +761,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_100"
-                        app:layout_constraintStart_toStartOf="@+id/blue_rec_10_1"
-                        app:layout_constraintEnd_toEndOf="@+id/blue_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/blue_rec_10_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/blue_rec_10_1"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/blue_rec_10_1"
+                        android:layout_alignEnd="@+id/blue_rec_10_1"
+                        android:layout_alignTop="@+id/blue_rec_10_1"
                         android:contentDescription="@string/yellow_rec_100_1" />
 
                     <ImageView
@@ -764,9 +773,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/blue_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_toRightOf="@+id/blue_rec_10_1"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -774,10 +783,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_100"
-                        app:layout_constraintStart_toStartOf="@+id/blue_rec_10_2"
-                        app:layout_constraintEnd_toEndOf="@+id/blue_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/blue_rec_10_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/blue_rec_10_2"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/blue_rec_10_2"
+                        android:layout_alignEnd="@+id/blue_rec_10_2"
+                        android:layout_alignTop="@+id/blue_rec_10_2"
                         android:contentDescription="@string/yellow_rec_100_2" />
 
                     <ImageView
@@ -786,9 +795,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/blue_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_toRightOf="@+id/blue_rec_10_2"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -796,10 +805,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_100"
-                        app:layout_constraintStart_toStartOf="@+id/blue_rec_10_3"
-                        app:layout_constraintEnd_toEndOf="@+id/blue_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/blue_rec_10_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/blue_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/blue_rec_10_3"
+                        android:layout_alignEnd="@+id/blue_rec_10_3"
+                        android:layout_alignTop="@+id/blue_rec_10_3"
                         android:contentDescription="@string/yellow_triangle_3"/>
 
                     <ImageView
@@ -808,9 +817,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/blue_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_toRightOf="@+id/blue_rec_10_3"
                         android:contentDescription="@string/yellow_rec_10_4"/>
 
                     <ImageView
@@ -820,10 +829,10 @@
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
                         android:src="@drawable/triangle_habits_blue"
-                        app:layout_constraintStart_toStartOf="@+id/blue_rec_10_4"
-                        app:layout_constraintEnd_toEndOf="@+id/blue_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/blue_rec_10_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/blue_rec_10_4"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/blue_rec_10_4"
+                        android:layout_alignEnd="@+id/blue_rec_10_4"
+                        android:layout_alignTop="@+id/blue_rec_10_4"
                         android:contentDescription="@string/yellow_rec_100_4" />
 
                     <ImageView
@@ -832,9 +841,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/blue_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_toRightOf="@+id/blue_rec_10_4"
                         android:contentDescription="@string/yellow_rec_10_5"/>
 
                     <ImageView
@@ -843,9 +852,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/blue_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_toRightOf="@+id/blue_rec_10_5"
                         android:contentDescription="@string/yellow_rec_10_6"/>
 
                     <ImageView
@@ -854,9 +863,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_blue_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/blue_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_alignTop="@+id/rectangle_for_result_3"
+                        android:layout_alignBottom="@+id/rectangle_for_result_3"
+                        android:layout_toRightOf="@+id/blue_rec_10_6"
                         android:contentDescription="@string/yellow_rec_10_7"/>
 
                     <ImageView
@@ -866,10 +875,10 @@
                         android:paddingTop="2dp"
                         android:paddingRight="2dp"
                         android:src="@drawable/triangle_habits_blue"
-                        app:layout_constraintStart_toStartOf="@+id/blue_rec_10_7"
-                        app:layout_constraintEnd_toEndOf="@+id/blue_rec_10_7"
-                        app:layout_constraintTop_toTopOf="@+id/blue_rec_10_7"
-                        app:layout_constraintBottom_toBottomOf="@+id/blue_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/blue_rec_10_7"
+                        android:layout_alignEnd="@+id/blue_rec_10_7"
+                        android:layout_alignTop="@+id/blue_rec_10_7"
                         android:contentDescription="@string/yellow_triangle_7"/>
 
                     <ImageView
@@ -878,7 +887,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_for_result"
                         android:layout_marginTop="8dp"
-                        app:layout_constraintTop_toBottomOf="@+id/rectangle_for_result_3"
+                        android:layout_marginBottom="250dp"
+                        android:layout_below="@+id/rectangle_for_result_3"
                         android:contentDescription="@string/rectangle_for_result_4" />
 
                     <ImageView
@@ -887,9 +897,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="16dp"
-                        app:layout_constraintStart_toStartOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
                         android:contentDescription="@string/yellow_rec_10_1"/>
 
                     <ImageView
@@ -897,10 +906,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_1"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_1"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_1"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_1"
+                        android:layout_alignEnd="@+id/purple_rec_10_1"
+                        android:layout_alignTop="@+id/purple_rec_10_1"
                         android:contentDescription="@string/yellow_rec_100_1" />
 
                     <ImageView
@@ -909,9 +918,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/purple_rec_10_1"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_toRightOf="@+id/purple_rec_10_1"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -919,10 +928,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_2"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_2"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_2"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_2"
+                        android:layout_alignEnd="@+id/purple_rec_10_2"
+                        android:layout_alignTop="@+id/purple_rec_10_2"
                         android:contentDescription="@string/yellow_rec_100_2" />
 
                     <ImageView
@@ -931,9 +940,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/purple_rec_10_2"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_toRightOf="@+id/purple_rec_10_2"
                         android:contentDescription="@string/yellow_rec_10_2"/>
 
                     <ImageView
@@ -941,10 +950,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_3"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_3"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_3"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_3"
+                        android:layout_alignEnd="@+id/purple_rec_10_3"
+                        android:layout_alignTop="@+id/purple_rec_10_3"
                         android:contentDescription="@string/yellow_triangle_3"/>
 
                     <ImageView
@@ -953,9 +962,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/purple_rec_10_3"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_toRightOf="@+id/purple_rec_10_3"
                         android:contentDescription="@string/yellow_rec_10_4"/>
 
                     <ImageView
@@ -963,10 +972,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_4"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_4"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_4"
+                        android:layout_alignEnd="@+id/purple_rec_10_4"
+                        android:layout_alignTop="@+id/purple_rec_10_4"
                         android:contentDescription="@string/yellow_rec_100_4" />
 
                     <ImageView
@@ -975,9 +984,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/purple_rec_10_4"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_toRightOf="@+id/purple_rec_10_4"
                         android:contentDescription="@string/yellow_rec_10_5"/>
 
                     <ImageView
@@ -985,10 +994,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_5"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_5"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_5"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_5"
+                        android:layout_alignEnd="@+id/purple_rec_10_5"
+                        android:layout_alignTop="@+id/purple_rec_10_5"
                         android:contentDescription="@string/yellow_rec_100_5" />
 
                     <ImageView
@@ -997,9 +1006,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/purple_rec_10_5"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_toRightOf="@+id/purple_rec_10_5"
                         android:contentDescription="@string/yellow_rec_10_6"/>
 
                     <ImageView
@@ -1007,10 +1016,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_6"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_6"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_6"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_6"
+                        android:layout_alignEnd="@+id/purple_rec_10_6"
+                        android:layout_alignTop="@+id/purple_rec_10_6"
                         android:contentDescription="@string/yellow_rec_100_6" />
 
                     <ImageView
@@ -1019,9 +1028,9 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_10"
                         android:layout_marginStart="2dp"
-                        app:layout_constraintStart_toEndOf="@+id/purple_rec_10_6"
-                        app:layout_constraintTop_toTopOf="@+id/rectangle_for_result_4"
-                        app:layout_constraintBottom_toBottomOf="@+id/rectangle_for_result_4"
+                        android:layout_alignTop="@+id/rectangle_for_result_4"
+                        android:layout_alignBottom="@+id/rectangle_for_result_4"
+                        android:layout_toRightOf="@+id/purple_rec_10_6"
                         android:contentDescription="@string/yellow_rec_10_7"/>
 
                     <ImageView
@@ -1029,13 +1038,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/rectangle_habits_purple_100"
-                        app:layout_constraintStart_toStartOf="@+id/purple_rec_10_7"
-                        app:layout_constraintEnd_toEndOf="@+id/purple_rec_10_7"
-                        app:layout_constraintTop_toTopOf="@+id/purple_rec_10_7"
-                        app:layout_constraintBottom_toBottomOf="@+id/purple_rec_10_7"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@+id/purple_rec_10_7"
+                        android:layout_alignEnd="@+id/purple_rec_10_7"
+                        android:layout_alignTop="@+id/purple_rec_10_7"
                         android:contentDescription="@string/yellow_triangle_7" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </RelativeLayout>
 
             </HorizontalScrollView>
 
@@ -1057,7 +1066,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/rectangle_for_text"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="34.2dp"
+                android:layout_marginTop="35dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_habits"
                 android:contentDescription="@string/rectangle_for_text_1"/>
@@ -1143,58 +1152,10 @@
 
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/navigation_rec"
-        app:layout_constraintBottom_toBottomOf="parent">
+    <include
+        layout="@layout/navigation_layout"
+        tools:layout_editor_absoluteX="-33dp"
+        tools:layout_editor_absoluteY="322dp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/tent_navigation"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="30dp"
-            android:contentDescription="@string/tent" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/courses_navigation"
-            android:layout_marginTop="27dp"
-            android:layout_marginStart="100dp"
-            android:contentDescription="@string/courses" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/community_navigation"
-            android:layout_gravity="end"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="100dp"
-            android:contentDescription="@string/community" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/settings_navigation"
-            android:layout_gravity="end"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="22dp"
-            android:contentDescription="@string/settings" />
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:src="@drawable/button_plus"
-        android:layout_marginTop="-75dp"
-        android:translationZ="10dp"
-        app:layout_constraintStart_toStartOf="@+id/navigation"
-        app:layout_constraintEnd_toEndOf="@+id/navigation"
-        app:layout_constraintTop_toTopOf="@+id/navigation"
-        android:contentDescription="@string/button_plus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

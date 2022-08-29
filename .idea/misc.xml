@@ -13,6 +13,7 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bk_tracking_habits.xml" value="0.192" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/circle_20.xml" value="0.175" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/circle_small.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/iconki.xml" value="0.143" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/line_separation.xml" value="0.175" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/menu_icon.xml" value="0.132" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/plus_button_all.xml" value="0.175" />
@@ -30,8 +31,8 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_motivation.xml" value="0.175" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/font/manrope_bold.xml" value="0.32407407407407407" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout-v26/tracking_habits.xml" value="0.22" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/tracking_habits.xml" value="0.2222222222222222" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/menu/menu.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/tracking_habits.xml" value="0.5" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/menu/menu.xml" value="0.25" />
       </map>
     </option>
   </component>

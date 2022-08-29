@@ -4,6 +4,9 @@
     <style name="TitleStyle">
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="expandedTitleGravity">center_horizontal</item>
+
     </style>
 
      <style name="MotivationStyle">
@@ -37,6 +40,9 @@
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
+    <style name="PlusButton">
+        <item name="colorAccent">@color/purpuric</item>
+    </style>
 <color name="background">#FFF3E9</color>
     <color name="eggplant">#573353</color>
 
