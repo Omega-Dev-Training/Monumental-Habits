@@ -9,7 +9,7 @@ import android.view.WindowManager
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tracking_habits)
+        setContentView(R.layout.layout_analytics)
 
         window.statusBarColor = Color.TRANSPARENT
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
