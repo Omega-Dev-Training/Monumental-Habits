@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="TitleStyle">
         <item name="android:textColor">@color/purpuric</item>
@@ -197,8 +197,6 @@
         <item name="android:maxWidth">44dp</item>
         <item name="android:width">44dp</item>
     </style>
-
-    <dimen name="design_menu_icon_size" tools:override="true">44dp</dimen>
 
 
     <style name="ImageButton" parent="Widget.AppCompat.ImageButton">
