@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bg_bottom_navigation"
         app:labelVisibilityMode="unlabeled"
-        app:itemRippleColor="@color/orange_20"
+        app:itemRippleColor="@color/transparent"
         android:backgroundTint="@color/transparent"
         android:paddingEnd="-20dp"
         android:paddingStart="-20dp"

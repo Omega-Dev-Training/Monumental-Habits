@@ -161,7 +161,6 @@
         <item name="titleTextAppearance">@style/TitleStyle</item>
         <item name="titleTextColor">@color/purpuric</item>
         <item name="android:paddingTop">25dp</item>
-        <item name="android:paddingBottom">25dp</item>
     </style>
 
     <style name="Button.Orange.Another" parent="ThemeOverlay.AppCompat">
@@ -190,9 +189,15 @@
     </style>
 
     <style name="MenuSize" parent="Widget.AppCompat.ActionButton">
-        <item name="android:minWidth">24dp</item>
-        <item name="android:maxWidth">44dp</item>
-        <item name="android:width">44dp</item>
+        <item name="android:minWidth">84dp</item>
+        <item name="android:maxWidth">84dp</item>
+        <item name="android:width">84dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingHorizontal">0dp</item>
+        <item name="android:minHeight">84dp</item>
+
     </style>
 
 
