@@ -18,6 +18,7 @@
 
         <!-- View styles. -->
         <item name="imageButtonStyle">@style/ImageButton</item>
+        <item name="toolbarStyle">@style/MaterialToolbarTheme</item>
     </style>
     <style name="Theme.MonumentalHabits.Bars">
         <item name="android:windowTranslucentStatus">true</item>

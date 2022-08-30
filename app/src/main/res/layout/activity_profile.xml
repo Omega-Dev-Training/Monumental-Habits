@@ -13,11 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:paddingBottom="10dp"
-        style="@style/MaterialToolbarTheme"
-        app:title="@string/zaglav"
-        app:titleTextColor="@color/purpuric"
-        app:titleTextAppearance="@style/zaglav" >
+        app:title="@string/zaglav">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -41,6 +37,7 @@
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/back">
