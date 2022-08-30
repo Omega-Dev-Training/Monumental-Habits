@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <style name="TitleStyle">
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="android:letterSpacing">-0.03</item>
+        <item name="expandedTitleGravity">center_horizontal</item>
 
     </style>
 
@@ -43,6 +43,8 @@
     <style name="PlusButton">
         <item name="colorAccent">@color/purpuric</item>
     </style>
+<color name="background">#FFF3E9</color>
+    <color name="eggplant">#573353</color>
 
     <style name="icon1">
         <item name="android:icon">@drawable/ic_chtoto</item>
@@ -75,7 +77,7 @@
 
     <style name="zaglav">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:textColor">@color/eggplant</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
@@ -130,7 +132,7 @@
     </style>
 
     <style name="Text.Bold2" parent="ThemeOverlay.AppCompat">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/plum</item>
         <item name="fontFamily">@font/manrope_bold</item>
         <item name="android:letterSpacing">-0.03</item>
@@ -159,6 +161,10 @@
         <item name="android:titleTextAppearance">@style/TitleStyle</item>
         <item name="android:paddingHorizontal" tools:ignore="NewApi">25dp</item>
 
+        <item name="titleTextAppearance">@style/TitleStyle</item>
+        <item name="titleTextColor">@color/purpuric</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
     </style>
 
     <style name="Button.Orange.Another" parent="ThemeOverlay.AppCompat">
@@ -191,9 +197,13 @@
         <item name="android:maxWidth">44dp</item>
         <item name="android:width">44dp</item>
     </style>
-    
+
     <dimen name="design_menu_icon_size" tools:override="true">44dp</dimen>
 
 
+    <style name="ImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
 
 </resources>

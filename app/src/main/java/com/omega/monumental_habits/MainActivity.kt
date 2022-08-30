@@ -15,7 +15,7 @@ import com.google.android.material.navigation.NavigationView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tracking_habits)
+        setContentView(R.layout.layout_analytics)
 
         val nav_view: BottomNavigationView = findViewById(R.id.navigation)
         nav_view.itemIconTintList = null
