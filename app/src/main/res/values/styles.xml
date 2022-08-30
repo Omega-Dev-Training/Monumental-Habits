@@ -217,4 +217,8 @@
         <item name="android:colorPrimary">@color/purpuric</item>
     </style>
 
+    <style name="bottom_spiner">
+        <item name="android:background">@drawable/very_big_bottom</item>
+    </style>
+
 </resources>

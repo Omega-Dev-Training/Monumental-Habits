@@ -48,7 +48,7 @@
             android:layout_marginTop="21dp"
             android:layout_marginEnd="16dp"
             android:minHeight="48dp"
-            android:background="@drawable/spiner"
+            style=""
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -80,7 +80,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="26dp"
             android:text="@string/name"
-            android:theme="@style/zaglav"
+            style="@style/zaglav"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="Name"
-            android:theme="@style/name"
+            style="@style/name"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -101,7 +101,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/podzaglav"
-            android:theme="@style/name"
+            style="@style/name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view1" />
 
@@ -112,7 +112,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/status_task"
-            android:theme="@style/name"
+            style="@style/name"
             app:layout_constraintStart_toEndOf="@+id/view2"
             app:layout_constraintTop_toBottomOf="@+id/view1" />
 
@@ -388,6 +388,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/bottom_spiner"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
@@ -443,6 +444,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="200dp"
         android:background="@drawable/back"
         android:foreground="?selectableItemBackground">
 
@@ -499,5 +501,5 @@
     </LinearLayout>
 </LinearLayout>
 </androidx.core.widget.NestedScrollView>
-    <include layout="@layout/navigation_layout"/>
+    <include layout="@layout/navigation_layout" />
 </LinearLayout>
