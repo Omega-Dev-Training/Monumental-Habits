@@ -28,7 +28,6 @@
         style="@style/MaterialToolbarTheme"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
         app:navigationIcon="@drawable/menu_icon"
-        app:menu="@menu/menu"
         android:paddingStart="10dp">
 
         <ImageView
