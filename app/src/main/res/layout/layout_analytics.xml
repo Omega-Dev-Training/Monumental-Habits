@@ -12,8 +12,15 @@
         style="@style/MaterialToolbarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Read A Book"
-        app:menu="@menu/edit_menu">
+        app:title="Read A Book">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="27dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_edit" />
 
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -95,7 +102,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/bg_white">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/icon_arrow_left"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -116,7 +123,7 @@
                     app:layout_constraintEnd_toStartOf="@id/icon_arrow_right"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/icon_arrow_right"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -1295,7 +1302,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="27dp"
-                    android:layout_marginEnd="10dp"
                     android:src="@drawable/ic_longest_streak"
                     app:layout_constraintEnd_toStartOf="@id/vertical_borders"
                     app:layout_constraintBottom_toTopOf="@id/horizontal_borders"/>
@@ -1325,7 +1331,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="27dp"
-                    android:layout_marginEnd="10dp"
                     android:src="@drawable/ic_current_streak"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@id/horizontal_borders"/>
@@ -1354,7 +1359,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="27dp"
-                    android:layout_marginEnd="10dp"
                     android:src="@drawable/ic_completion_rate"
                     app:layout_constraintEnd_toStartOf="@id/vertical_borders"
                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -1383,7 +1387,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="27dp"
-                    android:layout_marginEnd="10dp"
                     android:src="@drawable/ic_ave_eas_score"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
