@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/beige"
+    android:background="@color/background"
     android:fitsSystemWindows="true"
     tools:ignore="MissingConstraints, RtlSymmetry, RtlHardcoded, UnusedAttribute, BottomAppBar, TooManyViews">
 
@@ -21,7 +21,7 @@
         android:id="@+id/toolbar_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/beige"
+        android:background="@color/background"
         app:title="Homepage"
         app:titleCentered="true"
         app:titleTextColor="@color/purpuric"
