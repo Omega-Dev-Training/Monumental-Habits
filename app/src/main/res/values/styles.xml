@@ -37,41 +37,33 @@
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
-<color name="background">#FFF3E9</color>
-    <color name="eggplant">#573353</color>
-
-    <style name="icon1">
-        <item name="android:icon">@drawable/ic_chtoto</item>
-        <item name="background">@drawable/iconki</item>
-    </style>
-
     <style name="medium">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="bold">
         <item name="android:fontFamily">@font/manrope_bold</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="name">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
         <item name="android:alpha">0.5</item>
     </style>
 
     <style name="num">
         <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="zaglav">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
@@ -181,6 +173,19 @@
         <item name="android:drawableStart">@drawable/ic_orange_rectangle</item>
     </style>
 
+    <style name="ciferci">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:fontFamily">@font/klasik_regular</item>
+    </style>
 
+    <style name="date">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/purpuric_50</item>
+    </style>
 
+    <style name="spinner">
+        <item name="android:background">@drawable/spinner</item>
+    </style>
 </resources>
