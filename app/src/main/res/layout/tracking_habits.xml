@@ -28,16 +28,14 @@
         style="@style/MaterialToolbarTheme"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
         app:navigationIcon="@drawable/menu_icon"
-        android:paddingVertical="25dp"
-        android:paddingStart="10dp"
-        android:clickable="true"
-        android:focusable="true">
+        app:menu="@menu/menu"
+        android:paddingStart="10dp">
 
         <ImageView
             android:id="@+id/avatar"
             android:layout_width="44dp"
             android:layout_height="44dp"
-            android:src="@drawable/avatar"
+            android:src="@drawable/profile"
             android:layout_gravity="right"
             android:layout_marginEnd="27dp"
             android:background="?selectableItemBackgroundBorderless"
@@ -87,11 +85,12 @@
                         android:id="@+id/human"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:src="@drawable/human_motivation"
                         android:layout_alignParentRight="true"
                         android:layout_gravity="right"
                         android:background="#0000"
                         android:contentDescription="@string/image_motivation"
-                        android:src="@drawable/human_motivation" />
+                         />
 
                     <TextView
                         android:id="@+id/motivation_phrase"
@@ -1079,6 +1078,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/text_habits"
                 android:contentDescription="@string/rectangle_for_text_1"/>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_separation"
+                app:layout_constraintTop_toTopOf="@id/rectangle_for_text_1"
+                app:layout_constraintStart_toEndOf="@+id/rectangle_for_text_1"/>
+
             <TextView
                 android:id="@+id/habits_1"
                 android:layout_width="wrap_content"
@@ -1100,6 +1106,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rectangle_for_text_1"
                 android:contentDescription="@string/rectangle_for_text_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_separation"
+                app:layout_constraintTop_toTopOf="@id/rectangle_for_text_2"
+                app:layout_constraintStart_toEndOf="@+id/rectangle_for_text_2"/>
 
             <TextView
                 android:id="@+id/habits_2"
@@ -1123,6 +1136,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/rectangle_for_text_2"
                 android:contentDescription="@string/rectangle_for_text_3"/>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_separation"
+                app:layout_constraintTop_toTopOf="@id/rectangle_for_text_3"
+                app:layout_constraintStart_toEndOf="@+id/rectangle_for_text_3"/>
+
             <TextView
                 android:id="@+id/habits_3"
                 android:layout_width="wrap_content"
@@ -1145,6 +1165,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/rectangle_for_text_3"
                 android:contentDescription="@string/rectangle_for_text_3"/>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_separation"
+                app:layout_constraintTop_toTopOf="@id/rectangle_for_text_4"
+                app:layout_constraintStart_toEndOf="@+id/rectangle_for_text_4"/>
+
             <TextView
                 android:id="@+id/habits_4"
                 android:layout_width="wrap_content"
@@ -1166,6 +1193,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rectangle_for_text_4"
                 android:contentDescription="@string/rectangle_for_text_3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_separation"
+                app:layout_constraintTop_toTopOf="@id/rectangle_for_text_5"
+                app:layout_constraintStart_toEndOf="@+id/rectangle_for_text_5"/>
 
             <TextView
                 android:id="@+id/habits_5"
