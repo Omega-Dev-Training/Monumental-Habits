@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingConstraints">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_navigation"
+        app:labelVisibilityMode="unlabeled"
+        app:itemRippleColor="@color/transparent"
+        android:backgroundTint="@color/transparent"
+        android:paddingEnd="-20dp"
+        android:paddingStart="-20dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="-10dp"
+        app:itemIconSize="45dp"
+        app:menu="@menu/navigation_icon"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_view_plus_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/button_plus"
+        android:layout_marginTop="-75dp"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="@+id/navigation"
+        app:layout_constraintTop_toTopOf="@+id/navigation"
+        android:contentDescription="@string/button_plus"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@color/transparent"
+        android:layout_marginBottom="-49dp"
+        android:translationZ="11dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintTop_toTopOf="@+id/image_view_plus_shadow"
+        app:layout_constraintStart_toStartOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="@+id/navigation"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        android:contentDescription="@string/button_plus">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/circle_20"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/button_plus"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fabCustomSize="50dp"-->
+<!--            android:defaultFocusHighlightEnabled="false"-->
+<!--            android:outlineSpotShadowColor="#0000"-->
+<!--            android:outlineAmbientShadowColor="@color/transparent"-->
+<!--            style="@style/PlusButton"-->
+
+<!--            tools:ignore="UnusedAttribute" />-->

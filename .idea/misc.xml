@@ -3,81 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2985" />
+        <entry key="..\:/Monumental-Habits1/app/src/main/res/font/manrope_bold.xml" value="0.396875" />
+        <entry key="..\:/Monumental-Habits1/app/src/main/res/layout/layout_analytics.xml" value="0.25" />
+        <entry key="..\:/Monumental-Habits1/app/src/main/res/layout/layout_settings.xml" value="0.33" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/back.xml" value="0.295" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bg_bottom_navigation.xml" value="0.2615" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bg_calendar_item.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bg_calendar_item_light.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bg_icon.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bg_white.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/circle_20.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/circle_small.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_back.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_backicon.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_calendar_item.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_calendar_item_full.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_calendar_item_half.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_calendar_item_light.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_camp.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_change.xml" value="0.2615" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_chasiki.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_chtoto.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_community.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_completion_rate.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_courses.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_current_streak.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_down.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_edit.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_equal_sign.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_fiver.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_flag.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_fourr.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_longest_streak.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_megal.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_menubutton.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_next.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_notification.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_one.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_oner.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_orange_rectangle.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_palatka.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_rectangle.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_rectangleb.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_repeat.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_settings.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_sevenr.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_sixr.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_threer.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_top_nav.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/ic_twor.xml" value="0.2985" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/iconki.xml" value="0.295" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/line_separation.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/menu_icon.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/navigation_rec.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/navigationbar.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/plus_button.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/plus_button_all.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_for_result.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_for_text.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_blue_10.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_blue_100.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_purple_10.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_purple_100.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_red_10.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_red_100.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_white.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_yellow_10.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_yellow_100.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_motivation.xml" value="0.2985" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/font/manrope_bold.xml" value="0.29765625" />
         <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/activity_profile.xml" value="0.2701502732240437" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/layout_analytics.xml" value="0.25" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/layout_settings.xml" value="0.27049180327868855" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/tracking_habits.xml" value="0.9" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/menu/menu.xml" value="0.275" />
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Monumental-Habits/app/src/main/res/menu/redactirovanie.xml" value="0.275" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/bk_tracking_habits.xml" value="0.192" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/circle_20.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/circle_small.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/line_separation.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/menu_icon.xml" value="0.132" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/plus_button_all.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_for_result.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_for_text.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_gabits_100.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_10.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_blue_10.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_blue_100.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_red_10.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_red_100.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_white.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_yellow_10.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_habits_yellow_100.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/drawable/rectangle_motivation.xml" value="0.175" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/font/manrope_bold.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout-v26/tracking_habits.xml" value="0.22" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/layout/tracking_habits.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/Monumental-Habits/app/src/main/res/menu/menu.xml" value="0.3009833262077811" />
       </map>
     </option>
   </component>
@@ -86,12 +39,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.2" />
-      </ProjectState>
-    </option>
   </component>
 </project>

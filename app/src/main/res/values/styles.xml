@@ -4,6 +4,9 @@
     <style name="TitleStyle">
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+
     </style>
 
      <style name="MotivationStyle">
@@ -37,6 +40,16 @@
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
+    <style name="PlusButton">
+        <item name="colorAccent">@color/purpuric</item>
+    </style>
+
+
+    <style name="icon1">
+        <item name="android:icon">@drawable/ic_chtoto</item>
+        <item name="background">@drawable/iconki</item>
+    </style>
+
     <style name="medium">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">16sp</item>
@@ -62,8 +75,8 @@
     </style>
 
     <style name="zaglav">
-        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/purpuric</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
@@ -118,7 +131,7 @@
     </style>
 
     <style name="Text.Bold2" parent="ThemeOverlay.AppCompat">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/plum</item>
         <item name="fontFamily">@font/manrope_bold</item>
         <item name="android:letterSpacing">-0.03</item>
@@ -144,8 +157,10 @@
     <style name="MaterialToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
         <item name="titleCentered">true</item>
         <item name="navigationIcon">@drawable/ic_top_nav</item>
+        <item name="android:titleTextAppearance">@style/TitleStyle</item>
+        <item name="titleTextAppearance">@style/TitleStyle</item>
+        <item name="titleTextColor">@color/purpuric</item>
         <item name="android:paddingTop">25dp</item>
-        <item name="android:paddingBottom">25dp</item>
     </style>
 
     <style name="Button.Orange.Another" parent="ThemeOverlay.AppCompat">
@@ -173,6 +188,23 @@
         <item name="android:drawableStart">@drawable/ic_orange_rectangle</item>
     </style>
 
+    <style name="MenuSize" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">84dp</item>
+        <item name="android:maxWidth">84dp</item>
+        <item name="android:width">84dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingHorizontal">0dp</item>
+        <item name="android:minHeight">84dp</item>
+
+    </style>
+
+    <style name="ImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
     <style name="ciferci">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/purpuric</item>
@@ -188,4 +220,5 @@
     <style name="spinner">
         <item name="android:background">@drawable/spinner</item>
     </style>
+
 </resources>

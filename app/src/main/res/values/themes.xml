@@ -2,23 +2,30 @@
     <!-- Base application theme. -->
     <style name="Theme.MonumentalHabits" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFF3E9</item>
+        <item name="colorPrimary">@color/purpuric</item>
         <item name="colorPrimaryVariant">@android:color/transparent</item>
-        <item name="colorOnPrimary">@color/eggplant</item>
+        <item name="colorOnPrimary">@color/purpuric</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/transparent</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >@color/design_default_color_primary_dark</item>
+        <item name="android:statusBarColor" >@color/black</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:actionButtonStyle">@style/MenuSize</item>
         <item name="android:windowBackground">#FFF3E9</item>
-    </style>
 
+        <!-- View styles. -->
+        <item name="imageButtonStyle">@style/ImageButton</item>
+    </style>
     <style name="Theme.MonumentalHabits.Bars">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:fitsSystemWindows">true</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
+
+
 </resources>

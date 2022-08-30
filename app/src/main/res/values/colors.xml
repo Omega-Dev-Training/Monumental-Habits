@@ -7,7 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="beige">#FFF3E9</color>
     <color name="purpuric">#573353</color>
     <color name="purpuric_50">#80573353</color>
     <color name="orange_20">#32FC9D45</color>
@@ -23,4 +22,6 @@
     <color name="plum_50">#80573353</color>
     <color name="plum_30">#4D573353</color>
     <color name="orange">#FDA758</color>
+    <color name="transparent">#0000</color>
+    <color name="background">#FFF3E9</color>
 </resources>
