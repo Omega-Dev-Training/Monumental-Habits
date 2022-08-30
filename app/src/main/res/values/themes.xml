@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.MonumentalHabits" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/eggplant</item>
+        <item name="colorPrimary">@color/purpuric</item>
         <item name="colorPrimaryVariant">@android:color/transparent</item>
-        <item name="colorOnPrimary">@color/eggplant</item>
+        <item name="colorOnPrimary">@color/purpuric</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/transparent</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>

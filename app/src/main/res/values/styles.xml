@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="TitleStyle">
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="expandedTitleGravity">center_horizontal</item>
+        <item name="android:letterSpacing">-0.03</item>
 
     </style>
 
@@ -43,8 +43,6 @@
     <style name="PlusButton">
         <item name="colorAccent">@color/purpuric</item>
     </style>
-<color name="background">#FFF3E9</color>
-    <color name="eggplant">#573353</color>
 
     <style name="icon1">
         <item name="android:icon">@drawable/ic_chtoto</item>
@@ -54,30 +52,30 @@
     <style name="medium">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="bold">
         <item name="android:fontFamily">@font/manrope_bold</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="name">
         <item name="android:fontFamily">@font/manrope_medium</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
         <item name="android:alpha">0.5</item>
     </style>
 
     <style name="num">
         <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="zaglav">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/eggplant</item>
+        <item name="android:textColor">@color/purpuric</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
     </style>
 
@@ -158,8 +156,9 @@
     <style name="MaterialToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
         <item name="titleCentered">true</item>
         <item name="navigationIcon">@drawable/ic_top_nav</item>
-        <item name="android:paddingTop">25dp</item>
-        <item name="android:paddingBottom">25dp</item>
+        <item name="android:titleTextAppearance">@style/TitleStyle</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">25dp</item>
+
     </style>
 
     <style name="Button.Orange.Another" parent="ThemeOverlay.AppCompat">
@@ -186,6 +185,14 @@
         <item name="android:layout_marginEnd">20dp</item>
         <item name="android:drawableStart">@drawable/ic_orange_rectangle</item>
     </style>
+
+    <style name="MenuSize" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">44dp</item>
+        <item name="android:width">44dp</item>
+    </style>
+    
+    <dimen name="design_menu_icon_size" tools:override="true">44dp</dimen>
 
 
 

@@ -22,29 +22,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/beige"
-        app:menu="@menu/menu"
         app:title="Homepage"
         app:titleCentered="true"
         app:titleTextColor="@color/purpuric"
-        app:titleTextAppearance="@style/TitleStyle"
+        style="@style/MaterialToolbarTheme"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
         app:navigationIcon="@drawable/menu_icon"
-        android:paddingTop="39dp"
+        android:paddingVertical="25dp"
         android:paddingStart="10dp"
         android:clickable="true"
         android:focusable="true">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/avatar"-->
-<!--            android:layout_width="44dp"-->
-<!--            android:layout_height="44dp"-->
-<!--            android:src="@drawable/avatar"-->
-<!--            android:layout_gravity="right"-->
-<!--            android:layout_marginEnd="27dp"-->
-<!--            android:background="?selectableItemBackgroundBorderless"-->
-<!--            android:clickable="true"-->
-<!--            android:focusable="true"-->
-<!--            android:contentDescription="@string/avatar"/>-->
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/avatar"
+            android:layout_gravity="right"
+            android:layout_marginEnd="27dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/avatar"/>
 
         </com.google.android.material.appbar.MaterialToolbar>
 
@@ -1050,7 +1049,8 @@
                         android:layout_below="@+id/rectangle_for_result_4"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="250dp"
-                        android:src="@drawable/rectangle_for_result" />
+                        android:src="@drawable/rectangle_for_result"
+                        android:contentDescription="@string/rectangle_for_result" />
 
                 </RelativeLayout>
 
@@ -1184,8 +1184,8 @@
 
     <include
         layout="@layout/navigation_layout"
-        tools:layout_editor_absoluteX="-33dp"
-        tools:layout_editor_absoluteY="322dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
