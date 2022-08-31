@@ -121,4 +121,17 @@
     <string name="average_easiness_score">Average Easiness Score</string>
     <string name="mark_habit_as_complete">Mark Habit as Complete</string>
     <string name="mark_habit_as_missed">Mark Habit as Missed</string>
+    <string name="num_one">18</string>
+    <string name="num_two">12</string>
+    <string name="date_one">06/14</string>
+    <string name="date_two">06/15</string>
+    <string name="date_three">06/16</string>
+    <string name="date_four">Today</string>
+    
+    <string-array name="Time">
+        <item>This year</item>
+        <item>This month</item>
+        <item>This week</item>
+        <item>This day</item>
+    </string-array>
 </resources>
