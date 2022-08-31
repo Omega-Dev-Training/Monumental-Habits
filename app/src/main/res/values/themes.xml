@@ -14,13 +14,13 @@
         <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:actionButtonStyle">@style/MenuSize</item>
         <item name="android:windowBackground">#FFF3E9</item>
 
         <!-- View styles. -->
         <item name="imageButtonStyle">@style/ImageButton</item>
         <item name="toolbarStyle">@style/MaterialToolbarTheme</item>
     </style>
+
     <style name="Theme.MonumentalHabits.Bars">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>

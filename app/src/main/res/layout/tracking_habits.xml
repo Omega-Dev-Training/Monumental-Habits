@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
     android:fitsSystemWindows="true"
     tools:ignore="MissingConstraints, RtlSymmetry, RtlHardcoded, UnusedAttribute, BottomAppBar, TooManyViews">
 
@@ -25,7 +24,6 @@
         app:title="Homepage"
         app:titleCentered="true"
         app:titleTextColor="@color/purpuric"
-        style="@style/MaterialToolbarTheme"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
         app:navigationIcon="@drawable/menu_icon"
         android:paddingStart="10dp">
