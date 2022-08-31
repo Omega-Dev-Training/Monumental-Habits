@@ -117,7 +117,7 @@
             android:layout_marginTop="17dp"
             android:layout_gravity="center_vertical"
             android:text="@string/notifications"
-            android:theme="@style/medium"
+            android:theme="@style/Text.Medium.Title"
             android:gravity="center"
             app:layout_constraintStart_toEndOf="@+id/icon_bell"
             app:layout_constraintTop_toTopOf="parent" />
@@ -185,7 +185,7 @@
             android:layout_marginTop="17dp"
             android:layout_gravity="center_vertical"
             android:text="@string/more_customization"
-            android:theme="@style/medium"
+            android:theme="@style/Text.Medium.Title"
             android:gravity="center"
             app:layout_constraintStart_toEndOf="@+id/icon_more"
             app:layout_constraintTop_toTopOf="parent" />
@@ -265,7 +265,7 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:text="@string/contact"
-            android:theme="@style/medium"
+            android:theme="@style/Text.Medium.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/icon_phone"
             app:layout_constraintTop_toTopOf="parent" />
@@ -318,7 +318,7 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:text="@string/feedback"
-            android:theme="@style/medium"
+            android:theme="@style/Text.Medium.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/icon_chat"
             app:layout_constraintTop_toTopOf="parent" />
@@ -371,7 +371,7 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:text="@string/privacy_policy"
-            android:theme="@style/medium"
+            android:theme="@style/Text.Medium.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/icon_check"
             app:layout_constraintTop_toTopOf="parent" />
@@ -424,7 +424,7 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:text="@string/about"
-            android:theme="@style/medium"
+            android:theme="@style/Text.Medium.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/icon_exclamation_mark"
             app:layout_constraintTop_toTopOf="parent" />
