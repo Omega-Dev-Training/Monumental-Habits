@@ -33,7 +33,7 @@
             android:src="@drawable/girl" />
 
         <TextView
-            style="@style/zaglav"
+            style="@style/Text.Big"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -42,7 +42,7 @@
             android:layout_marginStart="33dp" />
 
         <TextView
-            style="@style/Text.Light50"
+            style="@style/Text.Medium.50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mail"
