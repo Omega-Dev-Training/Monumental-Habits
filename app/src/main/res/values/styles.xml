@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="MaterialToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleCentered">true</item>
+        <item name="navigationIcon">@drawable/ic_top_nav</item>
+        <item name="android:titleTextAppearance">@style/TitleStyle</item>
+        <item name="titleTextColor">@color/purpuric</item>
+        <item name="android:paddingTop">25dp</item>
+    </style>
 
-
-    // pur 18 bold -0.03
     <style name="TitleStyle">
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:textSize">18sp</item>
@@ -11,134 +16,58 @@
         <item name="android:letterSpacing">-0.03</item>
     </style>
 
-    <style name="zaglav">
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="android:letterSpacing">-0.03</item>
-    </style>
+<!--    <style name="zaglav">-->
+<!--        <item name="android:textColor">@color/purpuric</item>-->
+<!--        <item name="android:textSize">18sp</item>-->
+<!--        <item name="android:fontFamily">@font/manrope_bold</item>-->
+<!--    </style>-->
 
-    <style name="Text.Bold2" parent="ThemeOverlay.AppCompat">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/plum</item>
+<!--    <style name="PlusButton">-->
+<!--        <item name="colorAccent">@color/purpuric</item>-->
+<!--    </style>-->
+
+<!--    <style name="num">-->
+<!--        <item name="android:textSize">24sp</item>-->
+<!--        <item name="android:textColor">@color/purpuric</item>-->
+<!--    </style>-->
+
+<!--    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="Theme.MonumentalHabits">-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:textSize">24sp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--    </style>-->
+
+<!--    <style name="MyActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid">-->
+<!--        <item name="displayOptions">showTitle|homeAsUp</item>-->
+<!--        <item name="titleTextColor">@color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="ToolbarTheme" parent="Widget.MaterialComponents.Toolbar">-->
+<!--        <item name="actionBarStyle">@style/MyActionBarStyle</item>-->
+<!--        <item name="navigationIcon">@drawable/ic_back</item>-->
+<!--    </style>-->
+
+    <style name="Button" parent="ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/manrope_bold</item>
         <item name="android:letterSpacing">-0.03</item>
-    </style>
-    //
-
-
-
-
-
-
-    // 14 pur bold -0.03
-    <style name="TextHabitsStyle">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="android:letterSpacing">-0.03</item>
+        <item name="textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
     </style>
 
-    <style name="Text.Medium" parent="ThemeOverlay.AppCompat">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/plum</item>
-        <item name="fontFamily">@font/manrope_bold</item>
-        <item name="android:letterSpacing">-0.03</item>
-    </style>
-    //
-
-
-
-
-
-
-    //16 pur bold -0.03
-    <style name="NumberHabitsStyle">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="android:letterSpacing">-0.03</item>
+    <style name="Button.White">
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 
-    <style name="bold">
-        <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:letterSpacing">-0.03</item>
-    </style>
-    //
-
-
-
-
-
-
-    //10 50 bold -0.03
-    <style name="Text.Medium.50" parent="ThemeOverlay.AppCompat">
-        <item name="android:textColor">@color/plum_50</item>
-        <item name="textAllCaps">true</item>
-
-    </style>
-
-    <style name="DayOfWeekStyle">
-        <item name="android:textSize">10sp</item>
-        <item name="android:textColor">@color/purpuric_50</item>
-        <item name="android:fontFamily">@font/manrope_bold</item>
-    </style>
-    //
-
-
-
-
-
-    <style name="Text.Medium.30">
-        <item name="android:textColor">@color/plum_30</item>
-    </style>
-
-
-    <style name="medium">
-        <item name="android:fontFamily">@font/manrope_medium</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-    </style>
-
-
-    <style name="date">
-        <item name="android:fontFamily">@font/manrope_medium</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:textColor">@color/purpuric_50</item>
-    </style>
-    //
-
-
-
-
-
-
-    // 12 50 medium
-    <style name="name">
-        <item name="android:fontFamily">@font/manrope_medium</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:alpha">0.5</item>
-    </style>
-
-    <style name="Text.Light50" parent="ThemeOverlay.AppCompat">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/plum_50</item>
-        <item name="fontFamily">@font/manrope_medium</item>
-    </style>
-
-
-
-
-
-
-    //white button
     <style name="Button.White.Big" parent="ThemeOverlay.AppCompat">
         <item name="backgroundTint">@color/white</item>
         <item name="textAllCaps">false</item>
-        <item name="android:textColor">@color/plum</item>
+        <item name="android:textColor">@color/purpuric</item>
         <item name="fontFamily">@font/manrope_bold</item>
         <item name="android:textSize">16sp</item>
         <item name="android:letterSpacing">-0.03</item>
@@ -148,116 +77,159 @@
         <item name="android:drawableStart">@drawable/ic_orange_rectangle</item>
     </style>
 
-    <style name="Button.White" parent="ThemeOverlay.AppCompat">
-        <item name="android:backgroundTint">@color/white</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textColor">@color/plum</item>
-        <item name="android:padding">20dp</item>
-        <item name="fontFamily">@font/manrope_bold</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:letterSpacing">-0.03</item>
-        <item name="cornerRadius">8dp</item>
-    </style>
-    //
-
-
-
-
-
-
-    // orange button
-    <style name="Button.Orange" parent="ThemeOverlay.AppCompat">
+    <style name="Button.Orange">
         <item name="android:backgroundTint">@color/orange</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textColor">@color/plum</item>
-        <item name="android:padding">20dp</item>
-        <item name="fontFamily">@font/manrope_bold</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:letterSpacing">-0.03</item>
-        <item name="cornerRadius">8dp</item>
     </style>
 
-    <style name="Button.Orange.Another" parent="ThemeOverlay.AppCompat">
-        <item name="android:backgroundTint">@color/orange</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textColor">@color/plum</item>
-        <item name="fontFamily">@font/manrope_bold</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:letterSpacing">-0.03</item>
-        <item name="cornerRadius">8dp</item>
+    <style name="Button.Orange.Another">
+        <item name="android:textSize">14sp</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">12dp</item>
     </style>
-    //
-
-
-
-
-    // 24 pur regular
-    <style name="Text.Bold" parent="ThemeOverlay.AppCompat">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/plum</item>
-        <item name="fontFamily">@font/klasik_regular</item>
-        <item name="android:letterSpacing">-0.05</item>
-    </style>
-
-    <style name="ciferci">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:fontFamily">@font/klasik_regular</item>
-        <item name="android:letterSpacing">-0.05</item>
-    </style>
-    // 18 spacing
-    <style name="MotivationStyle">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:fontFamily">@font/klasik_regular</item>
-        <item name="android:letterSpacing">-0.03</item>
-    </style>
-
-    //
-
-
-
-
-
-
-    //toolbar
-    <style name="MaterialToolbarTheme" parent="Widget.MaterialComponents.Toolbar">
-        <item name="titleCentered">true</item>
-        <item name="navigationIcon">@drawable/ic_top_nav</item>
-        <item name="android:titleTextAppearance">@style/TitleStyle</item>
-        <item name="titleTextColor">@color/purpuric</item>
-        <item name="android:paddingTop">25dp</item>
-    </style>
-
-
-
-
-
 
     <style name="ImageButton" parent="Widget.AppCompat.ImageButton">
         <item name="android:background">?selectableItemBackgroundBorderless</item>
         <item name="android:scaleType">fitCenter</item>
     </style>
 
-
-
-
-
     <style name="spinner">
         <item name="android:background">@drawable/spinner</item>
     </style>
 
+<!--    <style name="ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        <item name="android:colorPrimary">@color/purpuric</item>-->
+<!--    </style>-->
 
 
-    <style name="AuthorTextStyle">
+    //Manrope Bold text style
+
+    <style name="Text" parent="ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="TextHabitsStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+    <style name="Text.Big">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NumberHabitsStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+    <style name="bold">
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+    </style>
+
+    <style name="Text.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.50">
+        <item name="android:textColor">@color/purpuric_50</item>
+        <item name="android:textSize">10sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="DayOfWeekStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/purpuric_50</item>
+        <item name="android:fontFamily">@font/manrope_bold</item>
+    </style>
+
+    <style name="AuthorTextStyle"> // !!!
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/purpuric_50</item>
         <item name="fontFamily">@font/manrope_bold</item>
         <item name="textAllCaps">true</item>
     </style>
 
+    <style name="Text.30">
+        <item name="android:textColor">@color/purpuric_30</item>
+    </style>
 
+
+    //Manrope Medium text style
+
+    <style name="Text.Medium">
+        <item name="fontFamily">@font/manrope_medium</item>
+    </style>
+
+    <style name="Text.Medium.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="medium">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+    </style>
+
+    <style name="Text.Medium.50">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/purpuric_50</item>
+    </style>
+
+    <style name="name">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="Text.Medium.50.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Medium.50.Small">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="date">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/purpuric_50</item>
+    </style>
+
+
+    //Klasik text style
+
+    <style name="Text.Klasik">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/klasik_regular</item>
+        <item name="android:letterSpacing">-0.05</item>
+    </style>
+
+    <style name="Text.Klasik.Small">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+    </style>
+
+    <style name="ciferci">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:fontFamily">@font/klasik_regular</item>
+    </style>
+
+    <style name="MotivationStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/purpuric</item>
+        <item name="android:fontFamily">@font/klasik_regular</item>
+    </style>
 
 </resources>
