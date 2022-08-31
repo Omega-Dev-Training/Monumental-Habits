@@ -16,7 +16,6 @@
         <item name="android:letterSpacing">-0.03</item>
     </style>
 
-
     <style name="Button" parent="ThemeOverlay.AppCompat">
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:textSize">16sp</item>
@@ -66,8 +65,6 @@
         <item name="android:background">@drawable/spinner</item>
     </style>
 
-
-
     //Manrope Bold text style
 
     <style name="Text" parent="ThemeOverlay.AppCompat">
@@ -95,12 +92,6 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/purpuric</item>
         <item name="android:fontFamily">@font/manrope_bold</item>
-    </style>
-
-    <style name="bold">
-        <item name="android:fontFamily">@font/manrope_bold</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/purpuric</item>
     </style>
 
     <style name="Text.Small">
@@ -141,22 +132,9 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="medium">
-        <item name="android:fontFamily">@font/manrope_medium</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-    </style>
-
     <style name="Text.Medium.50">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/purpuric_50</item>
-    </style>
-
-    <style name="name">
-        <item name="android:fontFamily">@font/manrope_medium</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:alpha">0.5</item>
     </style>
 
     <style name="Text.Medium.50.Title">
@@ -167,11 +145,6 @@
         <item name="android:textSize">10sp</item>
     </style>
 
-    <style name="date">
-        <item name="android:fontFamily">@font/manrope_medium</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:textColor">@color/purpuric_50</item>
-    </style>
 
 
     //Klasik text style
@@ -187,11 +160,8 @@
         <item name="android:letterSpacing">-0.03</item>
     </style>
 
-    <style name="ciferci">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/purpuric</item>
-        <item name="android:fontFamily">@font/klasik_regular</item>
+    <style name="bottom_spiner">
+        <item name="android:background">@drawable/very_big_bottom</item>
     </style>
-
 
 </resources>
