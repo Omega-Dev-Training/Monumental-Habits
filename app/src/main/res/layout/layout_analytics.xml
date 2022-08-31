@@ -2,14 +2,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFF3E9">
+    tools:ignore="ContentDescription, RtlSymmetry, TooManyViews, UnusedAttribute">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
-        style="@style/MaterialToolbarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Read A Book">
@@ -19,7 +18,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginEnd="27dp"
-            android:background="?selectableItemBackgroundBorderless"
             android:src="@drawable/ic_edit" />
 
     </com.google.android.material.appbar.MaterialToolbar>
@@ -33,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="164dp"
+            android:paddingTop="15dp"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,12 +55,12 @@
 
                 <TextView
                     android:id="@+id/title_habit"
-                    style="@style/Text.Bold2"
+                    style="@style/Text.Title"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="13dp"
-                    android:text="Read a Book"
+                    android:text="@string/read_a_book_2"
                     android:paddingVertical="5dp"
                     app:layout_constraintStart_toEndOf="@id/image_habit"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -70,11 +69,11 @@
 
                 <TextView
                     android:id="@+id/title_notification"
-                    style="@style/Text.Light50"
+                    style="@style/Text.Medium.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
-                    android:text="Repeat everyday"
+                    android:text="@string/repeat_everyday"
                     android:drawablePadding="9dp"
                     app:layout_constraintStart_toStartOf="@id/title_habit"
                     app:layout_constraintTop_toBottomOf="@id/title_habit"
@@ -82,11 +81,11 @@
 
                 <TextView
                     android:id="@+id/title_repeat"
-                    style="@style/Text.Light50"
+                    style="@style/Text.Medium.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="Reminders: 5:00 am"
+                    android:text="@string/reminders_5_00_am"
                     android:drawablePadding="9dp"
                     app:layout_constraintStart_toStartOf="@id/title_notification"
                     app:layout_constraintTop_toBottomOf="@id/title_notification"
@@ -113,12 +112,12 @@
                     app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
-                    style="@style/Text.Bold2"
+                    style="@style/Text.Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:paddingVertical="5dp"
-                    android:text="January"
+                    android:text="@string/january"
                     app:layout_constraintStart_toEndOf="@+id/icon_arrow_left"
                     app:layout_constraintEnd_toStartOf="@id/icon_arrow_right"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -135,21 +134,21 @@
 
                 <TextView
                     android:id="@+id/month_1"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     app:layout_constraintStart_toStartOf="@id/day_1"
                     app:layout_constraintEnd_toEndOf="@id/day_1"
-                    android:text="SUN"
+                    android:text="@string/sun"
                     app:layout_constraintTop_toBottomOf="@+id/icon_arrow_left"/>
 
                 <TextView
                     android:id="@+id/month_2"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MON"
+                    android:text="@string/mon"
                     app:layout_constraintTop_toTopOf="@id/month_1"
                     app:layout_constraintBottom_toBottomOf="@id/month_1"
                     app:layout_constraintEnd_toEndOf="@id/day_2"
@@ -157,10 +156,10 @@
 
                 <TextView
                     android:id="@+id/month_3"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TUE"
+                    android:text="@string/tue"
                     app:layout_constraintTop_toTopOf="@id/month_2"
                     app:layout_constraintBottom_toBottomOf="@id/month_2"
                     app:layout_constraintEnd_toEndOf="@id/day_3"
@@ -168,10 +167,10 @@
 
                 <TextView
                     android:id="@+id/month_4"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="WED"
+                    android:text="@string/wed"
                     app:layout_constraintTop_toTopOf="@id/month_3"
                     app:layout_constraintBottom_toBottomOf="@id/month_3"
                     app:layout_constraintEnd_toEndOf="@id/day_4"
@@ -179,10 +178,10 @@
 
                 <TextView
                     android:id="@+id/month_5"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="THU"
+                    android:text="@string/thu"
                     app:layout_constraintTop_toTopOf="@id/month_4"
                     app:layout_constraintBottom_toBottomOf="@id/month_4"
                     app:layout_constraintEnd_toEndOf="@id/day_5"
@@ -190,10 +189,10 @@
 
                 <TextView
                     android:id="@+id/month_6"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FRI"
+                    android:text="@string/fri"
                     app:layout_constraintTop_toTopOf="@id/month_5"
                     app:layout_constraintBottom_toBottomOf="@id/month_5"
                     app:layout_constraintEnd_toEndOf="@id/day_6"
@@ -201,10 +200,10 @@
 
                 <TextView
                     android:id="@+id/month_7"
-                    style="@style/Text.Medium.50"
+                    style="@style/Text.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SAT"
+                    android:text="@string/sat"
                     app:layout_constraintTop_toTopOf="@id/month_6"
                     app:layout_constraintBottom_toBottomOf="@id/month_6"
                     app:layout_constraintEnd_toEndOf="@id/day_7"
@@ -226,8 +225,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="1"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_1"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -250,12 +249,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_1">
 
                     <TextView
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="2"
-                        style="@style/Text.Medium"/>
+                        android:layout_marginTop="8dp"
+                        android:text="@string/num_2" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -284,8 +283,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="3"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_3"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -312,8 +311,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="4"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_4"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -339,8 +338,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="5"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_5"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -367,8 +366,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="6"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_6"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -395,8 +394,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="7"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_7"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -426,8 +425,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="8"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_8"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -456,8 +455,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="9"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_9"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -484,8 +483,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="10"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_10"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -514,8 +513,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="11"
-                        style="@style/Text.Medium" />
+                        android:text="@string/num_11"
+                        style="@style/Text" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -524,59 +523,6 @@
                         android:layout_margin="5dp"
                         android:src="@drawable/ic_calendar_item_full"
                         android:background="@drawable/ic_calendar_item" />
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <com.google.android.material.bottomnavigation.BottomNavigationView
-                            android:layout_width="match_parent"
-                            android:layout_height="80dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@drawable/bg_bottom_navigation">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom"
-                                android:layout_marginStart="23dp"
-                                android:layout_marginBottom="21dp"
-                                android:src="@drawable/ic_camp" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom"
-                                android:layout_marginStart="107dp"
-                                android:layout_marginBottom="18dp"
-                                android:src="@drawable/ic_courses" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="end|bottom"
-                                android:layout_marginEnd="103dp"
-                                android:layout_marginBottom="17dp"
-                                android:src="@drawable/ic_community" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="end|bottom"
-                                android:layout_marginEnd="22dp"
-                                android:layout_marginBottom="15dp"
-                                android:src="@drawable/ic_settings" />
-
-                        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/bottom_nav_button" />
-
-                    </RelativeLayout>
 
                 </LinearLayout>
 
@@ -595,8 +541,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="12"
-                        style="@style/Text.Medium"/>
+                        android:text="@string/num_12"
+                        style="@style/Text"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -623,8 +569,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="13"
-                        style="@style/Text.Medium" />
+                        android:text="@string/num_13"
+                        style="@style/Text" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -653,8 +599,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="14"
-                        style="@style/Text.Medium" />
+                        android:text="@string/num_14"
+                        style="@style/Text" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -681,8 +627,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="15"
-                        style="@style/Text.Medium" />
+                        android:text="@string/num_15"
+                        style="@style/Text" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -711,8 +657,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="16"
-                        style="@style/Text.Medium" />
+                        android:text="@string/num_16"
+                        style="@style/Text" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -734,12 +680,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_16">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="17" />
+                        android:text="@string/num_17" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -764,12 +710,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_17">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="18" />
+                        android:text="@string/num_18" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -791,12 +737,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_18">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="19" />
+                        android:text="@string/num_19" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -818,12 +764,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_19">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="20" />
+                        android:text="@string/num_20" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -848,12 +794,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_20">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="21" />
+                        android:text="@string/num_21" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -876,12 +822,12 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="22" />
+                        android:text="@string/num_22" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -903,12 +849,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_22">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="23" />
+                        android:text="@string/num_23" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -930,12 +876,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_23">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="24" />
+                        android:text="@string/num_24" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -957,12 +903,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_24">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="25" />
+                        android:text="@string/num_25" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -984,12 +930,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_25">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="26" />
+                        android:text="@string/num_26" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1011,12 +957,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_26">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="27" />
+                        android:text="@string/num_27" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1038,12 +984,12 @@
                     app:layout_constraintStart_toEndOf="@id/day_27">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="28" />
+                        android:text="@string/num_28" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1068,12 +1014,12 @@
                     app:layout_constraintBottom_toBottomOf="parent">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="29" />
+                        android:text="@string/num_29" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1096,12 +1042,12 @@
                     app:layout_constraintBottom_toBottomOf="@id/day_29">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="30" />
+                        android:text="@string/num_30" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1124,12 +1070,12 @@
                     app:layout_constraintBottom_toBottomOf="@id/day_30">
 
                     <TextView
-                        style="@style/Text.Medium"
+                        style="@style/Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="8dp"
-                        android:text="31" />
+                        android:text="@string/num_31" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1156,8 +1102,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="1"
-                        style="@style/Text.Medium.30"/>
+                        android:text="@string/num_1"
+                        style="@style/Text.30"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1184,8 +1130,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="2"
-                        style="@style/Text.Medium.30"/>
+                        android:text="@string/num_2"
+                        style="@style/Text.30"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1212,8 +1158,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="3"
-                        style="@style/Text.Medium.30"/>
+                        android:text="@string/num_3"
+                        style="@style/Text.30"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1240,8 +1186,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
-                        android:text="4"
-                        style="@style/Text.Medium.30"/>
+                        android:text="@string/num_4"
+                        style="@style/Text.30"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -1263,11 +1209,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/Text.Light50"
+                style="@style/Text.Medium.50.Title"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="22dp"
-                android:text="Analytics"
-                android:textSize="16sp"
+                android:text="@string/analytics"
                 android:gravity="center_horizontal"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -1278,22 +1223,22 @@
 
                 <TextView
                     android:id="@+id/longest_streak_value"
-                    style="@style/Text.Bold"
+                    style="@style/Text.Klasik"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="27dp"
                     android:layout_marginStart="19dp"
-                    android:text="20 Days"
+                    android:text="@string/title_20_days"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
-                    style="@style/Text.Light50"
+                    style="@style/Text.Medium.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="28dp"
                     android:layout_marginTop="8dp"
-                    android:text="Longest Streak"
+                    android:text="@string/longest_streak"
                     app:layout_constraintStart_toStartOf="@id/longest_streak_value"
                     app:layout_constraintTop_toBottomOf="@id/longest_streak_value"
                     app:layout_constraintBottom_toTopOf="@id/horizontal_borders"/>
@@ -1308,21 +1253,21 @@
 
                 <TextView
                     android:id="@+id/current_streak_value"
-                    style="@style/Text.Bold"
+                    style="@style/Text.Klasik"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="27dp"
                     android:layout_marginStart="19dp"
-                    android:text="0 Days"
+                    android:text="@string/title_0_days"
                     app:layout_constraintStart_toEndOf="@id/vertical_borders"
                     app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
-                    style="@style/Text.Light50"
+                    style="@style/Text.Medium.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Current Streak"
+                    android:text="@string/current_streak"
                     app:layout_constraintStart_toEndOf="@id/vertical_borders"
                     app:layout_constraintTop_toBottomOf="@id/current_streak_value"
                     app:layout_constraintStart_toStartOf="@id/current_streak_value"/>
@@ -1337,21 +1282,21 @@
 
                 <TextView
                     android:id="@+id/completion_rate_value"
-                    style="@style/Text.Bold"
+                    style="@style/Text.Klasik"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="27dp"
                     android:layout_marginStart="19dp"
-                    android:text="98 %"
+                    android:text="@string/title_98_persent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/horizontal_borders"/>
 
                 <TextView
-                    style="@style/Text.Light50"
+                    style="@style/Text.Medium.50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Completion Rate"
+                    android:text="@string/completion_rate"
                     app:layout_constraintStart_toStartOf="@id/completion_rate_value"
                     app:layout_constraintTop_toBottomOf="@id/completion_rate_value"/>
 
@@ -1365,21 +1310,21 @@
 
                 <TextView
                     android:id="@+id/average_easiness_score_value"
-                    style="@style/Text.Bold"
+                    style="@style/Text.Klasik"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="27dp"
                     android:layout_marginStart="19dp"
-                    android:text="7"
+                    android:text="@string/num_7"
                     app:layout_constraintStart_toEndOf="@id/vertical_borders"
                     app:layout_constraintTop_toBottomOf="@id/horizontal_borders"/>
 
                 <TextView
-                    style="@style/Text.Light50"
+                    style="@style/Text.Medium.50"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Average Easiness Score"
+                    android:text="@string/average_easiness_score"
                     app:layout_constraintStart_toStartOf="@+id/average_easiness_score_value"
                     app:layout_constraintTop_toBottomOf="@id/average_easiness_score_value"/>
 
@@ -1419,7 +1364,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginHorizontal="20dp"
-                android:text="Mark Habit as Complete" />
+                android:text="@string/mark_habit_as_complete" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/Button.White"
@@ -1427,8 +1372,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="20dp"
-
-                android:text="Mark Habit as Missed" />
+                android:text="@string/mark_habit_as_missed" />
 
         </LinearLayout>
 
